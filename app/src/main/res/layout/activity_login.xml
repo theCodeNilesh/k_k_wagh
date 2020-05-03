@@ -16,7 +16,8 @@
         android:scaleType="fitXY"
         android:src="@drawable/clover"
         android:translationY="-11dp"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/circle"
