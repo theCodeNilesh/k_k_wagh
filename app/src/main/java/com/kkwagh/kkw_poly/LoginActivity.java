@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,29 +17,6 @@ public class LoginActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
-
-
-        //Do not mess with this part its all designing part
-
-
-        //variable declarrarion
-        ImageView leafbg, circle, blur1, blur2, blur3, blurtop1, blurtop2, blurtop3, blurtop4;
-        TextView first_letter, second_letter;
-
-
-        //retriving variables
-
-        leafbg = (ImageView) findViewById(R.id.leafbg);
-        circle = (ImageView) findViewById(R.id.circle);
-        blur1 = (ImageView) findViewById(R.id.blur1);
-        blur2 = (ImageView) findViewById(R.id.blur2);
-        blur3 = (ImageView) findViewById(R.id.blur3);
-        blurtop1 = (ImageView) findViewById(R.id.blurtop1);
-        blurtop2 = (ImageView) findViewById(R.id.blurtop2);
-        blurtop3 = (ImageView) findViewById(R.id.blurtop3);
-        blurtop4 = (ImageView) findViewById(R.id.blurtop4);
-        first_letter = (TextView) findViewById(R.id.first_letter);
-        second_letter = (TextView) findViewById(R.id.second_letter);
 
 
         new Handler().postDelayed(new Runnable() {
