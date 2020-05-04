@@ -2,16 +2,232 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Work In Progress"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/verify_top"
+        android:layout_width="210dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_top"
+        android:transitionName="top_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="189dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Verify"
+        android:textColor="#ffff"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/verify_top_circle2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle1_top"
+        android:transitionName="top_image2"
+        app:layout_constraintStart_toEndOf="@+id/verify_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/verify_circle_bottom"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circle_bt2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/verify_circle_bottom" />
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="OTP"
+            android:textColor="#2C0F87"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:id="@+id/opt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/form">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <EditText
+                    android:id="@+id/opt1"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/text_log_bg"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:textColor="#8A71DB"
+                    android:textSize="20dp" />
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <EditText
+                    android:id="@+id/opt2"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/text_log_bg"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:textColor="#8A71DB"
+                    android:textSize="20dp" />
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <EditText
+                    android:id="@+id/opt3"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/text_log_bg"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:textColor="#8A71DB"
+                    android:textSize="20dp" />
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="18dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <EditText
+                    android:id="@+id/opt4"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/text_log_bg"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:textColor="#8A71DB"
+                    android:textSize="20dp"
+
+                    />
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/opt_text">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:neomorph_background_color="#7156C7"
+                app:neomorph_corner_radius="13dp"
+                app:neomorph_elevation="5dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#899CD9"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <Button
+                    android:id="@+id/send_otp"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Confirm"
+                    android:textColor="#ffff"
+                    android:textSize="16sp" />
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

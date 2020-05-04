@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,8 @@ public class LoginActivity extends AppCompatActivity {
     String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
+    ImageView top_circle, top_circle2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,9 @@ public class LoginActivity extends AppCompatActivity {
         forgot_password = findViewById(R.id.forgot_password);
         sign_in = findViewById(R.id.sign_in);
         login = findViewById(R.id.login);
+        top_circle = (ImageView) findViewById(R.id.top_circle);
+        top_circle2 = (ImageView) findViewById(R.id.top_circle2);
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +108,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         UserLoginClass userLoginClass = new UserLoginClass();
         userLoginClass.execute(mobile_no, password);
+
     }
 }
 

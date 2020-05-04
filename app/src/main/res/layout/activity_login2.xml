@@ -13,14 +13,17 @@
         android:layout_height="180dp"
         android:scaleType="fitXY"
         android:src="@drawable/login_top"
+        android:transitionName="top_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageView
+        android:id="@+id/top_circle2"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="90dp"
         android:scaleType="fitXY"
+        android:transitionName="top_image2"
         android:src="@drawable/circle1_top"
         app:layout_constraintStart_toEndOf="@+id/top_circle"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,8 +38,8 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
         android:layout_marginBottom="50dp"
         android:src="@drawable/circle_bt2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -144,6 +147,7 @@
 
 
         <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
