@@ -16,7 +16,7 @@ import java.util.HashMap;
 public class LoginActivity extends AppCompatActivity {
     EditText phone_no, password;
     String PhoneNoHolder, PasswordHolder;
-    Button login;
+    Button login, forgot_password, sign_in;
     String finalResult;
     Boolean CheckEditText;
     String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
@@ -30,6 +30,8 @@ public class LoginActivity extends AppCompatActivity {
 
         phone_no = findViewById(R.id.phone_no);
         password = findViewById(R.id.password);
+        forgot_password = findViewById(R.id.forgot_password);
+        sign_in = findViewById(R.id.sign_in);
         login = findViewById(R.id.login);
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +43,22 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(LoginActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sign_in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -64,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Intent intent = new Intent(LoginActivity.this, SendOTPActivity.class);
+                Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
                 if (httpResponseMsg.equals("Success")) {
                     startActivity(intent);
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
