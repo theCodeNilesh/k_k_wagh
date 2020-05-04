@@ -1,5 +1,6 @@
 package com.kkwagh.kkw_poly;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -18,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     Button login;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/login_api.php";
+    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
 
@@ -50,11 +51,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(PhoneNoHolder)) {
             CheckEditText = false;
-        } else if (TextUtils.isEmpty(PasswordHolder)) {
-            CheckEditText = false;
-        } else {
-            CheckEditText = true;
-        }
+        } else CheckEditText = !TextUtils.isEmpty(PasswordHolder);
     }
 
     public void UserLoginFunction(final String mobile_no, final String password) {
@@ -67,8 +64,11 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
+                Intent intent = new Intent(LoginActivity.this, SendOTPActivity.class);
                 if (httpResponseMsg.equals("Success")) {
+                    startActivity(intent);
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
+                    finish();
                 } else {
                     Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_LONG).show();
                 }
