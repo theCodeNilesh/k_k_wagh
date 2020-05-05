@@ -1,5 +1,6 @@
 package com.kkwagh.kkw_poly;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,9 +22,11 @@ public class RegistrationActivity extends AppCompatActivity {
     Button register;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/Demo/register_api.php";
+    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/register_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
+    Intent intent = getIntent();
+    String PhoneNoHolder = intent.getStringExtra("phone_no");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,7 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 CheckEditTextIsEmptyOrNot();
                 if (CheckEditText) {
-                    UserRegisterFunction(StudentNameHolder, PasswordHolder, ConfirmPasswordHolder, ParentPhoneNoHolder, EmailHolder, AddressHolder, CityHolder, TalukaHolder, DistrictHolder, StateHolder, StandardHolder, QuestionHolder);
+                    UserRegisterFunction(PhoneNoHolder, StudentNameHolder, PasswordHolder, ParentPhoneNoHolder, EmailHolder, AddressHolder, CityHolder, TalukaHolder, DistrictHolder, StateHolder, StandardHolder, QuestionHolder);
                 } else {
                     Toast.makeText(RegistrationActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
                 }
