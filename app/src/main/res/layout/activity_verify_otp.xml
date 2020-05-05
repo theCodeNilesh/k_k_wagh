@@ -102,7 +102,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <EditText
-                    android:id="@+id/opt1"
+                    android:id="@+id/otp1"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:background="@drawable/text_log_bg"
@@ -126,7 +126,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <EditText
-                    android:id="@+id/opt2"
+                    android:id="@+id/otp2"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:background="@drawable/text_log_bg"
@@ -150,7 +150,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <EditText
-                    android:id="@+id/opt3"
+                    android:id="@+id/otp3"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:background="@drawable/text_log_bg"
@@ -174,7 +174,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <EditText
-                    android:id="@+id/opt4"
+                    android:id="@+id/otp4"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:background="@drawable/text_log_bg"
@@ -212,7 +212,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <Button
-                    android:id="@+id/send_otp"
+                    android:id="@+id/verify_otp"
                     android:layout_width="180dp"
                     android:layout_height="45dp"
                     android:background="@drawable/login_btn_bg"
