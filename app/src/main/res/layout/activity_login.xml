@@ -98,6 +98,7 @@
                 android:padding="12dp"
                 android:textColor="#8A71DB"
                 android:textSize="15dp"
+                android:inputType="phone"
                 android:lines="1"
                 android:maxLength="10"
 
