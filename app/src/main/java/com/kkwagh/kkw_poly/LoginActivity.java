@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     Button login, forgot_password, sign_in;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/login_api.php";
+    String HttpURL = "http://192.168.0.106/KKWP/kkwp-app-backend/login_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
     ImageView top_circle;
@@ -54,16 +54,16 @@ public class LoginActivity extends AppCompatActivity {
         forgot_password.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(LoginActivity.this, WorkInProgressActivity.class);
-                startActivity(intent1);
+                Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
+                startActivity(intent);
             }
         });
 
         sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(LoginActivity.this, SendOTPActivity.class);
-                startActivity(intent2);
+                Intent intent = new Intent(LoginActivity.this, SendOTPActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -87,9 +87,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Intent intent3 = new Intent(LoginActivity.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
                 if (httpResponseMsg.equals("Success")) {
-                    startActivity(intent3);
+                    startActivity(intent);
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     finish();
                 } else {

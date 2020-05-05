@@ -37,13 +37,13 @@ public class VerifyOTPActivity extends AppCompatActivity {
                 stringBuilder.append(digit1Holder).append(digit2Holder).append(digit3Holder).append(digit4Holder);
                 appended_otp = stringBuilder.toString();
 
-                Intent intent = getIntent();
-                String phone_no = intent.getStringExtra("phone_no");
-                String from_api_otp = intent.getStringExtra("otp");
+                Intent i = getIntent();
+                String phone_no1 = i.getStringExtra("phone_no");
+                String from_api_otp = i.getStringExtra("otp");
 
                 if (appended_otp.equals(from_api_otp)) {
                     Intent intent5 = new Intent(VerifyOTPActivity.this, RegistrationActivity.class);
-                    intent5.putExtra("phone_no", phone_no);
+                    intent5.putExtra("phone_no", phone_no1);
                     startActivity(intent5);
                 } else {
                     Toast.makeText(VerifyOTPActivity.this, "OTP is not valid", Toast.LENGTH_LONG).show();

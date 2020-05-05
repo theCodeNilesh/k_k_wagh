@@ -20,13 +20,12 @@ public class RegistrationActivity extends AppCompatActivity {
     EditText student_name, password_registration, confirm_password, parent_phone_no, email, address, city, taluka, district, state, standard;
     String StudentNameHolder, PasswordHolder, ConfirmPasswordHolder, ParentPhoneNoHolder, EmailHolder, AddressHolder, CityHolder, TalukaHolder, DistrictHolder, StateHolder, StandardHolder, QuestionHolder = "1";
     Button register;
+    String PhoneNoHolder;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/register_api.php";
+    String HttpURL = "http://192.168.0.106/KKWP/kkwp-app-backend/register_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
-    Intent intent = getIntent();
-    String PhoneNoHolder = intent.getStringExtra("phone_no");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +46,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
         rbleft = findViewById(R.id.rbleft);
         rbright = findViewById(R.id.rbright);
+
+        Intent intent = getIntent();
+        PhoneNoHolder = intent.getStringExtra("phone_no");
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,11 +76,7 @@ public class RegistrationActivity extends AppCompatActivity {
         StateHolder = state.getText().toString();
         StandardHolder = standard.getText().toString();
 
-        if (TextUtils.isEmpty(StudentNameHolder) || TextUtils.isEmpty(PasswordHolder) || TextUtils.isEmpty(ConfirmPasswordHolder) || TextUtils.isEmpty(ParentPhoneNoHolder) || TextUtils.isEmpty(EmailHolder) || TextUtils.isEmpty(AddressHolder) || TextUtils.isEmpty(CityHolder) || TextUtils.isEmpty(TalukaHolder) || TextUtils.isEmpty(DistrictHolder) || TextUtils.isEmpty(StateHolder) || TextUtils.isEmpty(StandardHolder)) {
-            CheckEditText = false;
-        } else {
-            CheckEditText = true;
-        }
+        CheckEditText = !TextUtils.isEmpty(StudentNameHolder) && !TextUtils.isEmpty(PasswordHolder) && !TextUtils.isEmpty(ConfirmPasswordHolder) && !TextUtils.isEmpty(ParentPhoneNoHolder) && !TextUtils.isEmpty(EmailHolder) && !TextUtils.isEmpty(AddressHolder) && !TextUtils.isEmpty(CityHolder) && !TextUtils.isEmpty(TalukaHolder) && !TextUtils.isEmpty(DistrictHolder) && !TextUtils.isEmpty(StateHolder) && !TextUtils.isEmpty(StandardHolder);
     }
 
     public void UserRegisterFunction(final String mobile_no, final String password, final String name, final String parent_mobile, final String email, final String address, final String city, final String taluka, final String district, final String state, final String std, final String question) {
@@ -97,8 +95,8 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             protected String doInBackground(String... params) {
                 hashMap.put("mobile_no", params[0]);
-                hashMap.put("password", params[1]);
-                hashMap.put("name", params[2]);
+                hashMap.put("name", params[1]);
+                hashMap.put("password", params[2]);
                 hashMap.put("parent_mobile", params[3]);
                 hashMap.put("email", params[4]);
                 hashMap.put("address", params[5]);
@@ -106,7 +104,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 hashMap.put("taluka", params[7]);
                 hashMap.put("district", params[8]);
                 hashMap.put("state", params[9]);
-                hashMap.put("question", params[10]);
+                hashMap.put("std", params[10]);
+                hashMap.put("question", params[11]);
                 finalResult = httpParse.postRequest(hashMap, HttpURL);
                 return finalResult;
             }

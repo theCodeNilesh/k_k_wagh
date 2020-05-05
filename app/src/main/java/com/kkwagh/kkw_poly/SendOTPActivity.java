@@ -21,7 +21,7 @@ public class SendOTPActivity extends AppCompatActivity {
     Button send_otp;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/sendOTP_api.php";
+    String HttpURL = "http://192.168.0.106/KKWP/kkwp-app-backend/sendOTP_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
 
@@ -48,11 +48,7 @@ public class SendOTPActivity extends AppCompatActivity {
     public void CheckEditTextIsEmptyOrNot() {
         PhoneNoHolder = phone_no.getText().toString();
 
-        if (TextUtils.isEmpty(PhoneNoHolder)) {
-            CheckEditText = false;
-        } else {
-            CheckEditText = true;
-        }
+        CheckEditText = !TextUtils.isEmpty(PhoneNoHolder);
     }
 
     public void OTPFunction(final String mobile_no) {
