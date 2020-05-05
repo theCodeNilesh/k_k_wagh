@@ -2,6 +2,7 @@ package com.kkwagh.kkw_poly;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +36,8 @@ public class VerifyOTPActivity extends AppCompatActivity {
         Intent intent = getIntent();
         final String phone_no = intent.getStringExtra("phone_no");
         final String from_api_otp = intent.getStringExtra("otp");
+
+        Log.d("appended_otp", appended_otp);
 
         verify_otp.setOnClickListener(new View.OnClickListener() {
             @Override

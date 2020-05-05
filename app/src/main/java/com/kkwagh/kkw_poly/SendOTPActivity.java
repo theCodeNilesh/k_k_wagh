@@ -1,5 +1,6 @@
 package com.kkwagh.kkw_poly;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,6 +30,7 @@ public class SendOTPActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_otp);
         send_otp = findViewById(R.id.send_otp);
+        phone_no = findViewById(R.id.phone_no);
 
         send_otp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +66,10 @@ public class SendOTPActivity extends AppCompatActivity {
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
                 Toast.makeText(SendOTPActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(SendOTPActivity.this, VerifyOTPActivity.class);
+                intent.putExtra("phone_no", PhoneNoHolder);
+                intent.putExtra("otp", httpResponseMsg);
+                startActivity(intent);
             }
 
             @Override
