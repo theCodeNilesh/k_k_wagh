@@ -164,7 +164,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <EditText
-                    android:id="@+id/Confirm_password"
+                    android:id="@+id/confirm_password"
                     android:layout_width="308dp"
                     android:layout_height="45dp"
                     android:layout_gravity="left"
@@ -202,7 +202,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <EditText
-                    android:id="@+id/Parent_ph_no"
+                    android:id="@+id/parent_phone_no"
                     android:layout_width="308dp"
                     android:layout_height="45dp"
                     android:layout_gravity="left"
@@ -375,7 +375,7 @@
                     app:neomorph_view_type="rectangular">
 
                     <EditText
-                        android:id="@+id/distrct"
+                        android:id="@+id/district"
                         android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
@@ -538,7 +538,7 @@
                 app:neomorph_view_type="rectangular">
 
             <Button
-                android:id="@+id/send_otp"
+                android:id="@+id/register"
                 android:layout_width="140dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
