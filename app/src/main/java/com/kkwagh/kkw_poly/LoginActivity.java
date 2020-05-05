@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
-    ImageView top_circle, top_circle2;
+    ImageView top_circle;
 
 
     @Override
@@ -36,8 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         forgot_password = findViewById(R.id.forgot_password);
         sign_in = findViewById(R.id.sign_in);
         login = findViewById(R.id.login);
-        top_circle = (ImageView) findViewById(R.id.top_circle);
-        top_circle2 = (ImageView) findViewById(R.id.top_circle2);
+        top_circle = findViewById(R.id.top_circle);
 
 
         login.setOnClickListener(new View.OnClickListener() {
