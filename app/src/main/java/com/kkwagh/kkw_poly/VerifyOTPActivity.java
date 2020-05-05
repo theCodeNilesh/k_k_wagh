@@ -2,6 +2,8 @@ package com.kkwagh.kkw_poly;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class VerifyOTPActivity extends AppCompatActivity {
     Button verify_otp;
-    EditText digit1, digit2, digit3, digit4;
     String appended_otp, digit1Holder, digit2Holder, digit3Holder, digit4Holder;
 
     @Override
@@ -20,10 +21,71 @@ public class VerifyOTPActivity extends AppCompatActivity {
         setContentView(R.layout.activity_verify_otp);
         verify_otp = findViewById(R.id.verify_otp);
 
-        digit1 = findViewById(R.id.otp1);
-        digit2 = findViewById(R.id.otp2);
-        digit3 = findViewById(R.id.otp3);
-        digit4 = findViewById(R.id.otp4);
+        final EditText digit1 = findViewById(R.id.otp1);
+        final EditText digit2 = findViewById(R.id.otp2);
+        final EditText digit3 = findViewById(R.id.otp3);
+        final EditText digit4 = findViewById(R.id.otp4);
+
+        digit1.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() == 1)
+                    digit2.requestFocus();
+            }
+        });
+        digit2.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() == 1)
+                    digit3.requestFocus();
+            }
+        });
+        digit3.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() == 1)
+                    digit4.requestFocus();
+            }
+        });
+        digit4.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.length() == 1)
+                    verify_otp.requestFocus();
+            }
+        });
 
         verify_otp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +107,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                     Intent intent5 = new Intent(VerifyOTPActivity.this, RegistrationActivity.class);
                     intent5.putExtra("phone_no", phone_no1);
                     startActivity(intent5);
+                    finish();
                 } else {
                     Toast.makeText(VerifyOTPActivity.this, "OTP is not valid", Toast.LENGTH_LONG).show();
                 }

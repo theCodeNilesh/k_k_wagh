@@ -66,6 +66,7 @@ public class SendOTPActivity extends AppCompatActivity {
                 intent.putExtra("phone_no", PhoneNoHolder);
                 intent.putExtra("otp", httpResponseMsg);
                 startActivity(intent);
+                finish();
             }
 
             @Override
