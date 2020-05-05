@@ -109,6 +109,7 @@
                     android:padding="12dp"
                     android:textAlignment="center"
                     android:textColor="#8A71DB"
+                    android:maxLength="1"
                     android:textSize="20dp" />
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -133,6 +134,7 @@
                     android:padding="12dp"
                     android:textAlignment="center"
                     android:textColor="#8A71DB"
+                    android:maxLength="1"
                     android:textSize="20dp" />
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -157,6 +159,7 @@
                     android:padding="12dp"
                     android:textAlignment="center"
                     android:textColor="#8A71DB"
+                    android:maxLength="1"
                     android:textSize="20dp" />
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -182,8 +185,7 @@
                     android:textAlignment="center"
                     android:textColor="#8A71DB"
                     android:textSize="20dp"
-
-                    />
+                    android:maxLength="1" />
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
 

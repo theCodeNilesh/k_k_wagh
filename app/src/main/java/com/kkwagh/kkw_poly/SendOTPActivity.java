@@ -65,7 +65,7 @@ public class SendOTPActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Toast.makeText(SendOTPActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
+                Toast.makeText(SendOTPActivity.this, "OTP Sent Successfully", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(SendOTPActivity.this, VerifyOTPActivity.class);
                 intent.putExtra("phone_no", PhoneNoHolder);
                 intent.putExtra("otp", httpResponseMsg);
