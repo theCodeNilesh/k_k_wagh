@@ -198,13 +198,13 @@
 
             <Button
                 android:id="@+id/forgot_password"
-                android:layout_width="112dp"
+                android:layout_width="122dp"
                 android:layout_height="31dp"
                 android:background="@drawable/forgot_bg"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="Forgot Password"
                 android:textColor="#2C0F87"
-                android:textSize="8sp" />
+                android:textSize="10sp" />
         </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
 
@@ -228,10 +228,9 @@
                 android:layout_height="31dp"
                 android:background="@drawable/forgot_bg"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Sign In"
+                android:text="Sign UP"
                 android:textColor="#2C0F87"
-
-                android:textSize="8sp" />
+                android:textSize="10sp" />
         </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
 

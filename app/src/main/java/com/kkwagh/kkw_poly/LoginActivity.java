@@ -1,6 +1,7 @@
 package com.kkwagh.kkw_poly;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -20,10 +21,11 @@ public class LoginActivity extends AppCompatActivity {
     Button login, forgot_password, sign_in;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.106/KKWP/kkwp-app-backend/login_api.php";
+    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
     ImageView top_circle;
+    SharedPreferences sp;
 
 
     @Override
@@ -37,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         sign_in = findViewById(R.id.sign_in);
         login = findViewById(R.id.login);
         top_circle = findViewById(R.id.top_circle);
-
+        sp = getSharedPreferences("login", MODE_PRIVATE);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +92,7 @@ public class LoginActivity extends AppCompatActivity {
                 Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
                 if (httpResponseMsg.equals("Success")) {
                     startActivity(intent);
+                    sp.edit().putBoolean("logged", false).apply();
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     finish();
                 } else {
