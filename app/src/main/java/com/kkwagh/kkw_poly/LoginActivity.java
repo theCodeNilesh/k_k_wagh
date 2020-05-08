@@ -21,7 +21,8 @@ public class LoginActivity extends AppCompatActivity {
     Button login, forgot_password, sign_in;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
+    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/login_api.php";
+    String URL = "http://192.168.43.238/KKWP/kkwp-app-backend/get_userID.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
     ImageView top_circle;
@@ -47,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                 CheckEditTextIsEmptyOrNot();
                 if (CheckEditText) {
                     UserLoginFunction(PhoneNoHolder, PasswordHolder);
+                    GetUserId(PhoneNoHolder, PasswordHolder);
                 } else {
                     Toast.makeText(LoginActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
                 }
@@ -110,7 +112,31 @@ public class LoginActivity extends AppCompatActivity {
         }
         UserLoginClass userLoginClass = new UserLoginClass();
         userLoginClass.execute(mobile_no, password);
+    }
 
+    public void GetUserId(final String mobile_no, final String password) {
+        class GetUserIdClass extends AsyncTask<String, Void, String> {
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+            }
+
+            @Override
+            protected void onPostExecute(String httpResponseMsg) {
+                super.onPostExecute(httpResponseMsg);
+                Toast.makeText(LoginActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+                hashMap.put("mobile_no", params[0]);
+                hashMap.put("password", params[1]);
+                finalResult = httpParse.postRequest(hashMap, URL);
+                return finalResult;
+            }
+        }
+        GetUserIdClass getUserIdClass = new GetUserIdClass();
+        getUserIdClass.execute(mobile_no, password);
     }
 }
 
