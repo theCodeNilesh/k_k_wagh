@@ -55,7 +55,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 CheckEditTextIsEmptyOrNot();
                 if (CheckEditText) {
-                    ResetPasswordFunction(PasswordHolder);
+                    ResetPasswordFunction(phone_no1, PasswordHolder);
                 } else {
                     Toast.makeText(ResetPasswordActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
                 }
@@ -133,7 +133,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
         } else CheckEditText = !TextUtils.isEmpty(PasswordHolder);
     }
 
-    public void ResetPasswordFunction(final String password) {
+    public void ResetPasswordFunction(final String mobile_no, final String password) {
         class ResetPasswordClass extends AsyncTask<String, Void, String> {
             @Override
             protected void onPreExecute() {
@@ -156,11 +156,12 @@ public class ResetPasswordActivity extends AppCompatActivity {
             @Override
             protected String doInBackground(String... params) {
                 hashMap.put("password", params[1]);
+                hashMap.put("mobile_no",params[0]);
                 finalResult = httpParse.postRequest(hashMap, HttpURL);
                 return finalResult;
             }
         }
         ResetPasswordClass resetPasswordClass = new ResetPasswordClass();
-        resetPasswordClass.execute(password);
+        resetPasswordClass.execute(mobile_no, password);
     }
 }

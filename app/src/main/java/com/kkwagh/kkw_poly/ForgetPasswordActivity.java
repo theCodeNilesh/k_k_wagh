@@ -59,7 +59,7 @@ public class ForgetPasswordActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Toast.makeText(ForgetPasswordActivity.this, "OTP Sent Successfully", Toast.LENGTH_LONG).show();
+                Toast.makeText(ForgetPasswordActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(ForgetPasswordActivity.this, ResetPasswordActivity.class);
                 intent.putExtra("phone_no", PhoneNoHolder);
                 intent.putExtra("otp", httpResponseMsg);
