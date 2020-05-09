@@ -7,12 +7,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Forget_Password extends AppCompatActivity {
+public class ForgetPasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget__password);
+        setContentView(R.layout.activity_forget_password);
 
         Button send_otp_forgot;
 
@@ -22,7 +22,7 @@ public class Forget_Password extends AppCompatActivity {
         send_otp_forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Forget_Password.this, ConfirmForgotPass.class);
+                Intent intent = new Intent(ForgetPasswordActivity.this, ResetPasswordActivity.class);
                 startActivity(intent);
             }
 
