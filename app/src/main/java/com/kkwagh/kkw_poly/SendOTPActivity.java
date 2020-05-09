@@ -76,7 +76,7 @@ public class SendOTPActivity extends AppCompatActivity {
                 return finalResult;
             }
         }
-        OTPFunctionClass userRegisterFunctionClass = new OTPFunctionClass();
-        userRegisterFunctionClass.execute(mobile_no);
+        OTPFunctionClass otpFunctionClass = new OTPFunctionClass();
+        otpFunctionClass.execute(mobile_no);
     }
 }
