@@ -4,18 +4,19 @@
     package="com.kkwagh.kkw_poly">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:hardwareAccelerated="false"
-        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:targetApi="m">
-
-
+        <activity android:name=".ConfirmForgotPass"></activity>
+        <activity android:name=".Forget_Password" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".SendOTPActivity"></activity>
-        <activity android:name=".VerifyOTPActivity"></activity>
-        <activity android:name=".RegistrationActivity"></activity>
-        <activity android:name=".WorkInProgressActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SendOTPActivity" />
+        <activity android:name=".VerifyOTPActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".WorkInProgressActivity" />
     </application>
+
 </manifest>
