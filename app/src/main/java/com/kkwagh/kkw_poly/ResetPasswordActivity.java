@@ -23,9 +23,8 @@ public class ResetPasswordActivity extends AppCompatActivity {
     String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/reset_password.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
-    Intent i = getIntent();
-    String phone_no1 = i.getStringExtra("phone_no");
-    String from_api_otp = i.getStringExtra("otp");
+    static  String phone_no1,from_api_otp ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +34,11 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
         password = findViewById(R.id.password_confirm);
         confirm_password = findViewById(R.id.confirm_password_confirm);
+
+        Intent i = getIntent();
+        phone_no1 = i.getStringExtra("phone_no");
+        from_api_otp = i.getStringExtra("otp");
+
 
         final EditText digit1 = findViewById(R.id.otp1);
         final EditText digit2 = findViewById(R.id.otp2);
