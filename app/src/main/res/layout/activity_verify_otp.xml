@@ -14,6 +14,7 @@
         android:transitionName="top_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="189dp"
         android:layout_height="80dp"
@@ -37,7 +38,6 @@
         android:transitionName="top_image2"
         app:layout_constraintStart_toEndOf="@+id/verify_top"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/verify_circle_bottom"
@@ -234,6 +234,5 @@
 
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
