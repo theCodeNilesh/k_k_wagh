@@ -23,7 +23,7 @@ public class RegistrationActivity extends AppCompatActivity {
     String PhoneNoHolder;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/register_api.php";
+    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/register_api.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
 

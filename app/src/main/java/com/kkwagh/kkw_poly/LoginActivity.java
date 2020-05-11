@@ -21,8 +21,8 @@ public class LoginActivity extends AppCompatActivity {
     Button login, forgot_password, sign_in;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.43.238/KKWP/kkwp-app-backend/login_api.php";
-    String URL = "http://192.168.43.238/KKWP/kkwp-app-backend/get_userID.php";
+    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
+    String URL = "http://192.168.0.12/KKWP/kkwp-app-backend/get_userID.php";
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
     ImageView top_circle;
@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         forgot_password.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, Forget_Password.class);
+                Intent intent = new Intent(LoginActivity.this, ForgetPasswordActivity.class);
                 startActivity(intent);
             }
         });

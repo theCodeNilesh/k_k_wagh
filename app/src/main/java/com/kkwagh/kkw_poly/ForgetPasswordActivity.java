@@ -7,18 +7,16 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
-public class SendOTPActivity extends AppCompatActivity {
-    ImageView top_circle, circle_top;
+public class ForgetPasswordActivity extends AppCompatActivity {
+    Button send_otp_forgot;
     EditText phone_no;
     String PhoneNoHolder;
-    Button send_otp;
     String finalResult;
     Boolean CheckEditText;
     String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/sendOTP_api.php";
@@ -28,18 +26,18 @@ public class SendOTPActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_otp);
-        send_otp = findViewById(R.id.send_otp);
-        phone_no = findViewById(R.id.phone_no);
+        setContentView(R.layout.activity_forget_password);
+        phone_no = findViewById(R.id.phone_no_forgot);
+        send_otp_forgot = findViewById(R.id.send_otp_forgot);
 
-        send_otp.setOnClickListener(new View.OnClickListener() {
+        send_otp_forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 CheckEditTextIsEmptyOrNot();
                 if (CheckEditText) {
                     OTPFunction(PhoneNoHolder);
                 } else {
-                    Toast.makeText(SendOTPActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ForgetPasswordActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -61,8 +59,8 @@ public class SendOTPActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Toast.makeText(SendOTPActivity.this, "OTP Sent Successfully", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(SendOTPActivity.this, VerifyOTPActivity.class);
+                Toast.makeText(ForgetPasswordActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(ForgetPasswordActivity.this, ResetPasswordActivity.class);
                 intent.putExtra("phone_no", PhoneNoHolder);
                 intent.putExtra("otp", httpResponseMsg);
                 startActivity(intent);
