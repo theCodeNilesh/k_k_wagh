@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
+import static com.kkwagh.kkw_poly.URLenvActivity.sendOTP_api;
+
 public class SendOTPActivity extends AppCompatActivity {
     ImageView top_circle, circle_top;
     EditText phone_no;
@@ -21,7 +23,7 @@ public class SendOTPActivity extends AppCompatActivity {
     Button send_otp;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/sendOTP_api.php";
+    String HttpURL = sendOTP_api;
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
 

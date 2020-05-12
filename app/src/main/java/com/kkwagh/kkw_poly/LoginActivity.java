@@ -15,14 +15,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
+import static com.kkwagh.kkw_poly.URLenvActivity.get_userId;
+import static com.kkwagh.kkw_poly.URLenvActivity.login_api;
+
 public class LoginActivity extends AppCompatActivity {
     EditText phone_no, password;
     String PhoneNoHolder, PasswordHolder;
     Button login, forgot_password, sign_in;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/login_api.php";
-    String URL = "http://192.168.0.12/KKWP/kkwp-app-backend/get_userID.php";
+    String HttpURL = login_api;
+    String URL = get_userId;
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
     ImageView top_circle;
@@ -91,9 +94,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Intent intent = new Intent(LoginActivity.this, WorkInProgressActivity.class);
                 if (httpResponseMsg.equals("Success")) {
-                    startActivity(intent);
+                    startActivity(new Intent(LoginActivity.this, HomeScreen.class));
                     sp.edit().putBoolean("logged", false).apply();
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                     finish();

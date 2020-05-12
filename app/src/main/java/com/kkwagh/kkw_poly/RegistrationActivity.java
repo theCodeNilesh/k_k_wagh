@@ -15,6 +15,8 @@ import androidx.appcompat.widget.AppCompatRadioButton;
 
 import java.util.HashMap;
 
+import static com.kkwagh.kkw_poly.URLenvActivity.register_api;
+
 public class RegistrationActivity extends AppCompatActivity {
     AppCompatRadioButton rbleft, rbright;
     EditText student_name, password_registration, confirm_password, parent_phone_no, email, address, city, taluka, district, state, standard;
@@ -23,7 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
     String PhoneNoHolder;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/register_api.php";
+    String HttpURL = register_api;
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
 

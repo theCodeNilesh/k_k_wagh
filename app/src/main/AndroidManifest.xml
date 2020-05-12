@@ -15,8 +15,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".ConfirmForgotPass"></activity>
-        <activity android:name=".Forget_Password" />
+        <activity android:name=".HomeScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

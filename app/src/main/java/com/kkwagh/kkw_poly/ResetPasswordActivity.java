@@ -15,12 +15,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
+import static com.kkwagh.kkw_poly.URLenvActivity.reset_password;
+
 public class ResetPasswordActivity extends AppCompatActivity {
     Button change_password;
     String appended_otp, digit1Holder, digit2Holder, digit3Holder, digit4Holder, PasswordHolder, ConfirmPasswordHolder, finalResult;
     EditText password, confirm_password;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/reset_password.php";
+    String HttpURL = reset_password;
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
     static  String phone_no1,from_api_otp ;

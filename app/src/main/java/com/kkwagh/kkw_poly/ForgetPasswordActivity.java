@@ -13,13 +13,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
+import static com.kkwagh.kkw_poly.URLenvActivity.sendOTP_api;
+
 public class ForgetPasswordActivity extends AppCompatActivity {
     Button send_otp_forgot;
     EditText phone_no;
     String PhoneNoHolder;
     String finalResult;
     Boolean CheckEditText;
-    String HttpURL = "http://192.168.0.12/KKWP/kkwp-app-backend/sendOTP_api.php";
+    String HttpURL = sendOTP_api;
     HashMap<String, String> hashMap = new HashMap<>();
     HttpParser httpParse = new HttpParser();
 
