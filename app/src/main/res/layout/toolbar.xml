@@ -6,6 +6,8 @@
     android:background="#00000000"
     android:elevation="4dp"
     android:gravity="start"
-    app:title="K K Wagh polytechnic">
+    app:title="K K Wagh polytechnic"
+    app:titleTextColor="#4324A5"
+    >
 
 </androidx.appcompat.widget.Toolbar>
