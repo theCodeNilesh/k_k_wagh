@@ -102,6 +102,14 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeScreen.this, Qiuz.class);
+                startActivity(intent);
+            }
+        });
+
         card5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".Qiuz">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/top_circle"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/opt_top_circle"
+        android:transitionName="top_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle_top"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle1_top"
+        android:transitionName="top_image2"
+        app:layout_constraintEnd_toStartOf="@+id/top_circle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Quiz"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_circle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/baloo2_semibold"
+                        android:text="Question1 "
+                        android:textAlignment="textStart"
+                        android:textColor="#4B339A"
+                        android:textSize="23sp" />
+
+                    <RadioGroup
+                        android:id="@+id/groupradio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="6dp">
+
+                        <!-- In RadioGroup create the 1 Radio Button-->
+                        <!-- like this we will add some more Radio Button-->
+                        <RadioButton
+                            android:id="@+id/op1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:buttonTint="@color/radio_color"
+                            android:checked="true"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Option 1"
+                            android:textAlignment="textStart"
+                            android:textColor="#7156C7"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/op2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:buttonTint="@color/radio_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Option 2"
+                            android:textAlignment="textStart"
+                            android:textColor="#7156C7"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/op3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:buttonTint="@color/radio_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Option 3"
+                            android:textAlignment="textStart"
+                            android:textColor="#7156C7"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/op4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:buttonTint="@color/radio_color"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Option 4"
+                            android:textAlignment="textStart"
+                            android:textColor="#7156C7"
+                            android:textSize="17dp" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                app:neomorph_background_color="#7156C7"
+                app:neomorph_corner_radius="13dp"
+                app:neomorph_elevation="5dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#899CD9"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <Button
+                    android:id="@+id/send_otp_forgot"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Next"
+                    android:textColor="#ffff"
+                    android:textSize="16sp" />
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
