@@ -101,6 +101,14 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeScreen.this, AdmissionProcess.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

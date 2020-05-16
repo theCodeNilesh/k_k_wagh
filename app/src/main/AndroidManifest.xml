@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
+        <activity android:name=".AdmissionProcess"></activity>
         <activity android:name=".HomeScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>

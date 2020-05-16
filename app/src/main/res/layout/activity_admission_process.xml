@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".AdmissionProcess">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:id="@+id/top_admission"
+                android:layout_width="200dp"
+                android:layout_height="170dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:src="@drawable/opt_top_circle" />
+
+            <TextView
+                android:id="@+id/verify_text"
+                android:layout_width="169dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="left"
+                android:text="Admission Process"
+                android:textAlignment="textEnd"
+                android:textColor="#ffff"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/verify_top_circle2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="80dp"
+                android:layout_toLeftOf="@+id/top_admission"
+                android:scaleType="fitXY"
+                android:src="@drawable/circle1_top" />
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/back_icon"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/baloo2_semibold"
+                        android:text="Steps for admission"
+                        android:textAlignment="center"
+                        android:textColor="#4B339A"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="1. Enrol online on DTE portal  www.dte.maharashtra.gov.in for post SSC and post HSC diploma admission process."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="2. Read the instruction in the information manual and fill up online form for admission and upload the necessary documents along with candidate photograph and sign on website:  www.dte.maharashtra.gov.in"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="3. Verify the form and documents at Facilitation Centre and go for candidate confirmation . K. K. Wagh Polytechnic has FC."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="4. Check the provisional merit list and update the information for any correction during grievance period only."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="5. Check the Final merit list."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="6. Confirm the option form as per the State CET cell Schedule and refer to the seat allotment online."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="7. Report to Admission Reporting Centre (ARC) to accept your seat preference."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="8. If seat is accepted (Freeze Option), then report to the final allotted institute for admission with all Original documents."
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/baloo2_semibold"
+                        android:text="List of documents:"
+                        android:textAlignment="center"
+                        android:textColor="#4B339A"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="8dp"
+                        android:text="1. SSC/HSC Mark sheet"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="2.Mark sheet of 8th and 9th std./proforma Z"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="3.  Caste certificate (Reserved Categories)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="4. Income certificate issued by competent authority(TFWS/All Reserved Categories)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="5. Issued by competent authority  (TFWS/All Reserved Categories)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="6.  Cast Validity for Reserved Categories ( for admission after HSC Science)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="7.  School/Collage Leaving Certificate"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="8. Nationality/Birth Certificates"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="9. Domicile Certificate"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="10. Non-Creamy Layer(OBC/SBC/NT/VJ/DT)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="11.  Certificate of Drawing Grade Examination(Intermediate)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="12. Aadhar Card"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="13. Nationalized Bank Passbook( For Scholarship)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="14. Ration Card ( For Scholarship)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/baloo2_semibold"
+                        android:text="List of scholarships::"
+                        android:textAlignment="center"
+                        android:textColor="#4B339A"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="8dp"
+                        android:text="1. Social welfare department of Govt.of Maharashtra(for SC/OBC/NT-VJ-DT/SBC Categories)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="2. Tribal development department of Govt.of Maharashtra(for ST Categories)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="3. Scholarship for minority communities(Muslim/Shikh/Christian/Jain/Parsi)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="4. MSBTE Scholarship for toppers(for meritorious candidates having economical poor family income)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="5. Rajashri Chhatrapati Shahu Maharaj Scholarship (EBC)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="5dp"
+                        android:text="6. Other Scholarship are also available (for meritorious and economically poor family income)"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
