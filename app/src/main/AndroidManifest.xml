@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".Achievment"></activity>
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".Achievment" />
         <activity android:name=".AdmissionProcess" />
         <activity android:name=".HomeScreen" />
         <activity android:name=".SplashScreen">

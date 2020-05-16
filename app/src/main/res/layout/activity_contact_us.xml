@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".ContactUs">
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/top_circle"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/opt_top_circle"
+        android:transitionName="top_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle_top"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/circle1_top"
+        android:transitionName="top_image2"
+        app:layout_constraintEnd_toStartOf="@+id/top_circle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="132dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_circle">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            app:neomorph_background_color="@color/bgcolor"
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_elevation="6dp"
+            app:neomorph_highlight_color="#ffff"
+            app:neomorph_shadow_color="#B2C0F3"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_view_type="rectangular">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/baloo2_semibold"
+                    android:text="Address"
+                    android:textAlignment="center"
+                    android:textColor="#4B339A"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:padding="3dp"
+                    android:text="K. K. Wagh Polytechnic,Hirabai Haridas Vidyanagari, Mumbai Agra Road,Amrutdham, Panchavati, Nashik, Maharashtra, India.PIN – 422003."
+                    android:textAlignment="center"
+                    android:textColor="#7156C7"
+                    android:textSize="16sp"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/baloo2_semibold"
+                        android:text="Contact"
+                        android:textAlignment="center"
+                        android:textColor="#4B339A"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="3dp"
+                        android:text="Ph. No.: (91) (0253)-2517005, 2517006 \nFax No.: (91) (0253) 2620038, 2511962"
+                        android:textAlignment="center"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/baloo2_semibold"
+                        android:text="Email"
+                        android:textAlignment="center"
+                        android:textColor="#4B339A"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:padding="3dp"
+                        android:text="Email: principal-poly@kkwagh.edu.in, disp-poly@kkwagh.edu.in"
+                        android:textAlignment="center"
+                        android:textColor="#7156C7"
+                        android:textSize="16sp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

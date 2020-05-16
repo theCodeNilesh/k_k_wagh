@@ -15,8 +15,7 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/back_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/achievment_top"
@@ -39,8 +38,7 @@
         android:src="@drawable/circle1_top"
         android:transitionName="top_image2"
         app:layout_constraintEnd_toStartOf="@+id/achievment_top"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +52,7 @@
         android:textColor="#ffff"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
         android:id="@+id/image_sl"
@@ -89,8 +87,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:pageTransformInterval="1000"
             app:pageTransformer="zoom"
-            app:slideInterval="2000"
-            />
+            app:slideInterval="2000" />
 
     </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -105,8 +102,6 @@
 
 
         />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

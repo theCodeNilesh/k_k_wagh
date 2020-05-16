@@ -32,7 +32,7 @@ public class HomeScreen extends AppCompatActivity {
 
         //declaring hooks
         NeomorphFrameLayout image_sl;
-        CardView card1, card2, card3, card4, card5, card6, card7;
+        CardView card1, card2, card3, card4, card5, card6, card7, card8;
 
         //finding hooks
         image_sl = (NeomorphFrameLayout) findViewById(R.id.image_sl);
@@ -43,6 +43,7 @@ public class HomeScreen extends AppCompatActivity {
         card5 = (CardView) findViewById(R.id.card5);
         card6 = (CardView) findViewById(R.id.card6);
         card7 = (CardView) findViewById(R.id.card7);
+        card8 = (CardView) findViewById(R.id.card8);
 
 
         CarouselView carouselView = findViewById(R.id.carousel);
@@ -117,6 +118,13 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
+        card8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeScreen.this, ContactUs.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
