@@ -1,6 +1,8 @@
 package com.kkwagh.kkw_poly;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,6 +53,8 @@ public class HomeScreen extends AppCompatActivity {
 
 
 
+
+
         //this code for image slider
         carouselView.setImageListener(new ImageListener() {
             @Override
@@ -89,7 +93,17 @@ public class HomeScreen extends AppCompatActivity {
         card7.animate().translationY(0).setDuration(300).setStartDelay(850);
 
 
+        card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeScreen.this, AboutUs.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 
 }
+

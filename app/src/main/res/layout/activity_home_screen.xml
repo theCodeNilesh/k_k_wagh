@@ -45,9 +45,6 @@
     </LinearLayout>
 
 
-
-
-
     <LinearLayout
         android:id="@+id/sec"
         android:layout_width="match_parent"
