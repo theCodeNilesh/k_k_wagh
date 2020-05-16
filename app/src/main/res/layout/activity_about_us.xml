@@ -149,15 +149,13 @@
 
                     <TextView
                         android:layout_width="297dp"
-                        android:layout_height="711dp"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_medium"
                         android:padding="5dp"
-                        android:text="1. 35 years wide experience \n2. Student focused education \n3. Good infrastructure \n4. Qualified and Experienced staff \n5. Free Leased Line and Broad band    Internet Facility \n6. Open access in library \n7. Excellent Higher Study and Placement Record \n8. Good industry interaction \n9. Regular Industrial Visits and Expert Talks \n10. Monthly progress report scheme for first year \n11. Spacious playground with tennis, volleyball and basketball courts \n12. Linked with city by college bus and city buses from all parts of the city \n13.In campus hostel and mess facilities for outstation students \n14. Language Laboratory \n15. Conducive academic atmosphere \n16. State of art Laboratories \n17. Modern teaching learning methodology and tools \n18. Excellent Final Year Results \n19. 24hrs Power Backup (320 KVA Genset) \n20. Excellent gymnasium \n21. Mentor scheme for individual attention \n22. Active Institute Industry Partnership Cell (IIPC)"
+                        android:text="1. 35 years wide experience \n\n2. Student focused education \n\n3. Good infrastructure \n\n4. Qualified and Experienced staff \n\n5. Free Leased Line and Broad band    Internet Facility \n\n6. Open access in library \n\n7. Excellent Higher Study and Placement Record \n\n8. Good industry interaction \n\n9. Regular Industrial Visits and Expert Talks \n\n10. Monthly progress report scheme for first year \n\n11. Spacious playground with tennis, volleyball and basketball courts \n\n12. Linked with city by college bus and city buses from all parts of the city \n\n13.In campus hostel and mess facilities for outstation students \n\n14. Language Laboratory \n\n15. Conducive academic atmosphere \n\n16. State of art Laboratories \n\n17. Modern teaching learning methodology and tools \n\n18. Excellent Final Year Results \n\n19. 24hrs Power Backup (320 KVA Genset) \n\n20. Excellent gymnasium \n\n21. Mentor scheme for individual attention \n\n22. Active Institute Industry Partnership Cell (IIPC)"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
                         android:textSize="16sp"
-
-
 
                         />
 
