@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
-    tools:context=".Qiuz">
+    tools:context=".Quiz">
 
     <Button
         android:id="@+id/back_btn"
@@ -93,6 +93,7 @@
                     android:padding="8dp">
 
                     <TextView
+                        android:id="@+id/question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
@@ -182,7 +183,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <Button
-                    android:id="@+id/send_otp_forgot"
+                    android:id="@+id/next"
                     android:layout_width="130dp"
                     android:layout_height="35dp"
                     android:background="@drawable/login_btn_bg"
