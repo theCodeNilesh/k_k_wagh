@@ -91,7 +91,7 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
-                Toast.makeText(RegistrationActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
+                Toast.makeText(RegistrationActivity.this, "Account Created Successfully", Toast.LENGTH_LONG).show();
             }
 
             @Override

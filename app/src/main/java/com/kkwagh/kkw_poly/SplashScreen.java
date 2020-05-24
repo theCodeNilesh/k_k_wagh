@@ -30,7 +30,7 @@ public class SplashScreen extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } else {
-                    startActivity(new Intent(SplashScreen.this, WorkInProgressActivity.class));
+                    startActivity(new Intent(SplashScreen.this, HomeScreen.class));
                     finish();
                 }
 

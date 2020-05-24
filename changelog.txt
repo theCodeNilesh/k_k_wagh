@@ -1,0 +1,8 @@
+added live url for online database connectivity
+removed otp in toast
+city 'c' small in registration
+remove replace after registration 
+remove user id toast after login
+fixed the time limit on SMS API
+changed the status bar bg color
+changed status bar icon colors

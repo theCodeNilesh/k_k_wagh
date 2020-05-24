@@ -15,11 +15,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".Quiz"></activity>
-        <activity android:name=".ContactUs" />
-        <activity android:name=".Achievment" />
-        <activity android:name=".AdmissionProcess" />
-        <activity android:name=".HomeScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +27,14 @@
         <activity android:name=".VerifyOTPActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".WorkInProgressActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".AboutUs" />
+        <activity android:name=".Quiz"></activity>
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Achievment" />
+        <activity android:name=".AdmissionProcess" />
+        <activity android:name=".HomeScreen" />
     </application>
 
 </manifest>

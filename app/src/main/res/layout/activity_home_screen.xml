@@ -18,23 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/back_btn"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="0dp"
-            android:background="@drawable/back_icon"
-
-            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/baloo2_semibold"
             android:gravity="center"
-            android:paddingLeft="15dp"
-            android:text="K K Wagh Polytechnic"
+            android:paddingLeft="5dp"
+            android:text="K K Wagh Polytechnic, Nashik"
             android:textAlignment="center"
             android:textColor="#5A3FB1"
             android:textSize="25sp"
@@ -92,7 +83,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/toolbar"
                 app:pageTransformInterval="1000"
                 app:pageTransformer="zoom"
-                app:slideInterval="2000"
+                app:slideInterval="5000"
                 />
 
 

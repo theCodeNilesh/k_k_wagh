@@ -317,7 +317,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
                         android:background="@drawable/text_log_bg"
-                        android:hint="city"
+                        android:hint="City"
                         android:padding="12dp"
                         android:textColor="#8A71DB"
                         android:textColorHint="#8A71DB"
