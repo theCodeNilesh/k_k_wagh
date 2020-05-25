@@ -54,18 +54,6 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/circle1_top" />
 
-            <Button
-                android:id="@+id/back_btn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/back_icon"
-
-                />
-
-
         </RelativeLayout>
 
 

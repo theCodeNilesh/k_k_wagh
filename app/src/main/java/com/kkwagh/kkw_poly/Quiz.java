@@ -1,6 +1,5 @@
 package com.kkwagh.kkw_poly;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +20,7 @@ public class Quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        back_btn = findViewById(R.id.back_btn);
+
         next = findViewById(R.id.next);
         questionView = findViewById(R.id.question);
         choice1 = findViewById(R.id.op1);
@@ -31,13 +30,6 @@ public class Quiz extends AppCompatActivity {
 
         updateQuestion();
 
-        back_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Quiz.this, HomeScreen.class);
-                startActivity(intent);
-            }
-        });
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
