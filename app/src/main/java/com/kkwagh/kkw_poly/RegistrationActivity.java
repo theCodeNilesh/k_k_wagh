@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,10 +57,25 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CheckEditTextIsEmptyOrNot();
-                if (CheckEditText) {
-                    UserRegisterFunction(PhoneNoHolder, StudentNameHolder, PasswordHolder, ParentPhoneNoHolder, EmailHolder, AddressHolder, CityHolder, TalukaHolder, DistrictHolder, StateHolder, StandardHolder, QuestionHolder);
+                
+                if (!CheckEditText) {
+                    Toast.makeText(RegistrationActivity.this, "Please fill all required fields", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(RegistrationActivity.this, "Please fill all form fields", Toast.LENGTH_LONG).show();
+                    if (!StudentNameHolder.matches("[a-zA-Z ]+")) {
+                        Toast.makeText(RegistrationActivity.this, "Enter name correctly", Toast.LENGTH_LONG).show();
+                    } else if (PasswordHolder.length() < 8) {
+                        Toast.makeText(RegistrationActivity.this, "Password Should Be Of Minimum 8 Characters", Toast.LENGTH_LONG).show();
+                    } else if (!ConfirmPasswordHolder.equals(PasswordHolder)) {
+                        Toast.makeText(RegistrationActivity.this, "Enter Password Equal To Above", Toast.LENGTH_LONG).show();
+                    } else if (ParentPhoneNoHolder.length() != 10) {
+                        Toast.makeText(RegistrationActivity.this, "Parent Mobile Number Should Be Of 10 Digits", Toast.LENGTH_LONG).show();
+                    } else if (!(Patterns.EMAIL_ADDRESS.matcher(EmailHolder).matches())) {
+                        Toast.makeText(RegistrationActivity.this, "Enter Valid Email", Toast.LENGTH_LONG).show();
+                    } else if (!(StandardHolder.equals("8") || StandardHolder.equals("9") || StandardHolder.equals("10") || StandardHolder.equals("11") || StandardHolder.equals("12"))) {
+                        Toast.makeText(RegistrationActivity.this, "Enter Valid Standard", Toast.LENGTH_LONG).show();
+                    } else {
+                        UserRegisterFunction(PhoneNoHolder, StudentNameHolder, PasswordHolder, ParentPhoneNoHolder, EmailHolder, AddressHolder, CityHolder, TalukaHolder, DistrictHolder, StateHolder, StandardHolder, QuestionHolder);
+                    }
                 }
             }
         });
@@ -78,7 +94,7 @@ public class RegistrationActivity extends AppCompatActivity {
         StateHolder = state.getText().toString();
         StandardHolder = standard.getText().toString();
 
-        CheckEditText = !TextUtils.isEmpty(StudentNameHolder) && !TextUtils.isEmpty(PasswordHolder) && !TextUtils.isEmpty(ConfirmPasswordHolder) && !TextUtils.isEmpty(ParentPhoneNoHolder) && !TextUtils.isEmpty(EmailHolder) && !TextUtils.isEmpty(AddressHolder) && !TextUtils.isEmpty(CityHolder) && !TextUtils.isEmpty(TalukaHolder) && !TextUtils.isEmpty(DistrictHolder) && !TextUtils.isEmpty(StateHolder) && !TextUtils.isEmpty(StandardHolder);
+        CheckEditText = !TextUtils.isEmpty(StudentNameHolder) && !TextUtils.isEmpty(PasswordHolder) && !TextUtils.isEmpty(ConfirmPasswordHolder) && !TextUtils.isEmpty(ParentPhoneNoHolder) || !TextUtils.isEmpty(EmailHolder) && !TextUtils.isEmpty(AddressHolder) && !TextUtils.isEmpty(CityHolder) && !TextUtils.isEmpty(TalukaHolder) && !TextUtils.isEmpty(DistrictHolder) && !TextUtils.isEmpty(StateHolder) && !TextUtils.isEmpty(StandardHolder);
     }
 
     public void UserRegisterFunction(final String mobile_no, final String password, final String name, final String parent_mobile, final String email, final String address, final String city, final String taluka, final String district, final String state, final String std, final String question) {
@@ -92,6 +108,8 @@ public class RegistrationActivity extends AppCompatActivity {
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
                 Toast.makeText(RegistrationActivity.this, "Account Created Successfully", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
 
             @Override
