@@ -1,8 +1,10 @@
 package com.kkwagh.kkw_poly;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +35,8 @@ public class HomeScreen extends AppCompatActivity {
         //declaring hooks
         NeomorphFrameLayout image_sl;
         CardView card1, card2, card3, card4, card5, card6, card7, card8;
+        Button logout;
+        final SharedPreferences sp;
 
         //finding hooks
         image_sl = findViewById(R.id.image_sl);
@@ -44,14 +48,22 @@ public class HomeScreen extends AppCompatActivity {
         card6 = findViewById(R.id.card6);
         card7 = findViewById(R.id.card7);
         card8 = findViewById(R.id.card8);
+        logout = findViewById(R.id.logout);
+        sp = getSharedPreferences("login", MODE_PRIVATE);
 
 
         CarouselView carouselView = findViewById(R.id.carousel);
         carouselView.setPageCount(mImages.length);
 
 
-
-
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sp.edit().putBoolean("logged", true).apply();
+                startActivity(new Intent(HomeScreen.this, LoginActivity.class));
+                finish();
+            }
+        });
 
 
 
@@ -137,7 +149,8 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        card7.setOnClickListener(new View.OnClickListener() {
+        card7
+                .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeScreen.this, WorkInProgressActivity.class));

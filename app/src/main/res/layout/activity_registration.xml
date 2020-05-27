@@ -248,6 +248,7 @@
                     android:layout_gravity="left"
                     android:background="@drawable/text_log_bg"
                     android:padding="12dp"
+                    android:inputType="textEmailAddress"
                     android:textColor="#8A71DB"
                     android:textSize="15dp"
                     />
