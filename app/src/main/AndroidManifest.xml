@@ -15,7 +15,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".Departments"></activity>
+        <activity android:name=".Intake"></activity>
+        <activity android:name=".DeptMe" />
+        <activity android:name=".DeptCv" />
+        <activity android:name=".DeptIt" />
+        <activity android:name=".DeptEntc" />
+        <activity android:name=".DeptEe" />
+        <activity android:name=".DeptCe" />
+        <activity android:name=".DeptCm" />
+        <activity android:name=".Departments" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
