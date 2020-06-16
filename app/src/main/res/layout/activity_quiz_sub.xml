@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
-    tools:context=".QuizLevel">
+    tools:context=".QuizSub">
 
     <ImageView
         android:id="@+id/level_top"
@@ -21,11 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/montserrat_medium"
-        android:text="Quiz\nDifficulty "
+        android:text="Subject "
         android:textColor="#ffff"
-        android:textSize="30sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,9 +58,7 @@
         app:neomorph_highlight_color="#ffff"
         app:neomorph_shadow_color="#B2C0F3"
         app:neomorph_shadow_type="outer"
-        app:neomorph_view_type="rectangular"
-        >
-
+        app:neomorph_view_type="rectangular">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -68,8 +66,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
                 android:layout_width="wrap_content"
@@ -84,12 +81,12 @@
                 app:neomorph_view_type="rectangular">
 
                 <Button
-                    android:id="@+id/low"
-                    android:layout_width="130dp"
-                    android:layout_height="35dp"
+                    android:id="@+id/sub1"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Low"
+                    android:text="Sub1"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 
@@ -109,12 +106,12 @@
                 app:neomorph_view_type="rectangular">
 
                 <Button
-                    android:id="@+id/medium"
-                    android:layout_width="130dp"
-                    android:layout_height="35dp"
+                    android:id="@+id/sub2"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="MEdium"
+                    android:text="Sub2"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 
@@ -134,12 +131,37 @@
                 app:neomorph_view_type="rectangular">
 
                 <Button
-                    android:id="@+id/high"
-                    android:layout_width="130dp"
-                    android:layout_height="35dp"
+                    android:id="@+id/sub3"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="High"
+                    android:text="Sub3"
+                    android:textColor="#ffff"
+                    android:textSize="16sp" />
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                app:neomorph_background_color="#7156C7"
+                app:neomorph_corner_radius="13dp"
+                app:neomorph_elevation="5dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#899CD9"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <Button
+                    android:id="@+id/sub4"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Sub4"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 

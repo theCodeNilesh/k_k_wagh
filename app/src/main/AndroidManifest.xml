@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".QuizLevel"></activity>
+        <activity android:name=".QuizSub"></activity>
+        <activity android:name=".QuizLevel" />
         <activity android:name=".Intake" />
         <activity android:name=".DeptMe" />
         <activity android:name=".DeptCv" />
