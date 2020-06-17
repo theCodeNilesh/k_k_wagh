@@ -153,7 +153,7 @@ public class HomeScreen extends AppCompatActivity {
                 .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeScreen.this, WorkInProgressActivity.class));
+                startActivity(new Intent(HomeScreen.this, AlumniSpeak.class));
             }
         });
 
