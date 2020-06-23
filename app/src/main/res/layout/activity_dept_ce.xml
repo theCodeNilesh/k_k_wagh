@@ -161,11 +161,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:padding="5dp"
                         android:text="Committed to groom students into Quality Chemical Engineers by imparting Technical Knowledge, Value Based Education, developing Enterprising Skills, Safe and Eco-friendly Outlook thereby contribute in development of Industry, Society and Nation"
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:justificationMode="inter_word"
+                        android:padding="8dp"
                         />
                 </LinearLayout>
 
@@ -213,11 +214,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/montserrat_medium"
-                        android:padding="5dp"
+                        android:justificationMode="inter_word"
                         android:text="Chemicals play indispensable role in our life. Every moment of life demand use of appropriate chemicals for making better living. Fuel like LPG, Diesel, Kerosene, LNG and CNG, Fertilizers, Agrochemicals, Pharmaceutical, Paints, Cements, Plastics, Flavour and Fragrance manufactured by chemical industries are the gift of chemical engineers to the mankind. To manufacture these items and offer allied services, there is great demand for chemical engineering. The institutions offering this course are very less. Out of all engineering seats at national level; less than 0.5 % of seats are for Chemical Engineering Course. Understanding the scarcity and demand; the course was started in 1998. We believe in overall development of students and it is our philosophy that every student is like diamond, therefore all efforts are directed for polishing them so that there worth will increase and they will glitter everywhere they go. A department has to its credit many success stories where complete transformation of an ordinary student to successful professional has taken place. Our efforts are very well recognized at State and National level. Chemical department has received so far a grant of around 15 lakh for arranging events, updating facility and networking with industry."
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:padding="8dp"
                         />
                 </LinearLayout>
 
