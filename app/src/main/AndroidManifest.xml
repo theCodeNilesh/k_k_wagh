@@ -42,7 +42,7 @@
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".AboutUs" />
-        <activity android:name=".Quiz" />
+        <activity android:name=".QuizActivity" />
         <activity android:name=".ContactUs" />
         <activity android:name=".Achievment" />
         <activity android:name=".AdmissionProcess" />

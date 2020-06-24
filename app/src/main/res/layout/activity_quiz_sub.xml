@@ -86,7 +86,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Sub1"
+                    android:text="English"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 
@@ -111,7 +111,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Sub2"
+                    android:text="Physics"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 
@@ -136,7 +136,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Sub3"
+                    android:text="Chemistry"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 
@@ -161,7 +161,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/login_btn_bg"
                     android:fontFamily="@font/montserrat_medium"
-                    android:text="Sub4"
+                    android:text="Maths"
                     android:textColor="#ffff"
                     android:textSize="16sp" />
 

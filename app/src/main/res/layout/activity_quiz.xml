@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
-    tools:context=".Quiz">
+    tools:context=".QuizActivity">
 
     <ImageView
         android:id="@+id/top_circle"
@@ -42,7 +42,61 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:freezesText="true"
+        android:text="Score: 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:freezesText="true"
+        android:text="Question: 1/x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_score" />
+
+    <TextView
+        android:id="@+id/text_view_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_question_count"
+        android:freezesText="true"
+        android:text="Category: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_question_count" />
+
+    <TextView
+        android:id="@+id/text_view_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_category"
+        android:freezesText="true"
+        android:text="Difficulty: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_category" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:freezesText="true"
+        android:text="00:30"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_circle" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -83,7 +137,7 @@
                     android:padding="8dp">
 
                     <TextView
-                        android:id="@+id/question"
+                        android:id="@+id/text_view_question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
@@ -95,7 +149,7 @@
                         android:textSize="23sp" />
 
                     <RadioGroup
-                        android:id="@+id/groupradio"
+                        android:id="@+id/radio_group"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -104,7 +158,7 @@
                         <!-- In RadioGroup create the 1 Radio Button-->
                         <!-- like this we will add some more Radio Button-->
                         <RadioButton
-                            android:id="@+id/op1"
+                            android:id="@+id/radio_button1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
@@ -117,7 +171,7 @@
                             android:textSize="17dp" />
 
                         <RadioButton
-                            android:id="@+id/op2"
+                            android:id="@+id/radio_button2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
@@ -129,7 +183,7 @@
                             android:textSize="17dp" />
 
                         <RadioButton
-                            android:id="@+id/op3"
+                            android:id="@+id/radio_button3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
@@ -141,7 +195,7 @@
                             android:textSize="17dp" />
 
                         <RadioButton
-                            android:id="@+id/op4"
+                            android:id="@+id/radio_button4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
@@ -173,7 +227,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <Button
-                    android:id="@+id/next"
+                    android:id="@+id/button_confirm_next"
                     android:layout_width="130dp"
                     android:layout_height="35dp"
                     android:background="@drawable/login_btn_bg"
