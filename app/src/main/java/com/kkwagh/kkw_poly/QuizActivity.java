@@ -31,8 +31,6 @@ public class QuizActivity extends AppCompatActivity {
     private static final String KEY_ANSWERED = "keyAnswered";
     private static final String KEY_QUESTION_LIST = "keyQuestionList";
     private TextView textViewQuestion;
-    private TextView textViewScore;
-    private TextView textViewQuestionCount;
     private TextView textViewCategory;
     private TextView textViewDifficulty;
     private TextView textViewCountDown;
@@ -60,8 +58,6 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         textViewQuestion = findViewById(R.id.text_view_question);
-        textViewScore = findViewById(R.id.text_view_score);
-        textViewQuestionCount = findViewById(R.id.text_view_question_count);
         textViewCategory = findViewById(R.id.text_view_category);
         textViewDifficulty = findViewById(R.id.text_view_difficulty);
         textViewCountDown = findViewById(R.id.text_view_countdown);
@@ -137,7 +133,6 @@ public class QuizActivity extends AppCompatActivity {
             rb4.setText(currentQuestion.getOption4());
 
             questionCounter++;
-            textViewQuestionCount.setText("Question: " + questionCounter + "/" + questionCountTotal);
             answered = false;
             buttonConfirmNext.setText("Confirm");
             timeLeftInMillis = COUNTDOWN_IN_MILLIS;
@@ -186,7 +181,6 @@ public class QuizActivity extends AppCompatActivity {
 
         if (answerNr == currentQuestion.getAnswerNr()) {
             score++;
-            textViewScore.setText("Score: " + score);
         }
         showSolution();
     }

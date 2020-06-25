@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/top_circle"
-        android:layout_width="170dp"
-        android:layout_height="140dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         android:scaleType="fitXY"
         android:src="@drawable/opt_top_circle"
         android:transitionName="top_image"
@@ -33,52 +33,41 @@
         android:layout_width="115dp"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="Quiz"
         android:textAlignment="center"
         android:textColor="#ffff"
-        android:textSize="38sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_view_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:freezesText="true"
-        android:text="Score: 0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_view_question_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_score"
-        android:freezesText="true"
-        android:text="Question: 1/x"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_score" />
 
     <TextView
         android:id="@+id/text_view_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_question_count"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_medium"
         android:freezesText="true"
         android:text="Category: "
+        android:textColor="#4B339A"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_question_count" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_difficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_category"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_medium"
         android:freezesText="true"
         android:text="Difficulty: "
+        android:textColor="#4B339A"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_category" />
 
@@ -87,9 +76,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/montserrat_medium"
         android:freezesText="true"
         android:text="00:30"
-        android:textSize="40sp"
+        android:textColor="#4B339A"
+        android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,10 +89,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="3dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="3dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,19 +103,19 @@
         app:layout_constraintTop_toBottomOf="@+id/top_circle">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
             android:orientation="vertical"
-            android:padding="6dp">
+            android:padding="3dp">
 
             <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
-                android:padding="5dp"
+                android:padding="3dp"
                 app:neomorph_background_color="@color/bgcolor"
                 app:neomorph_corner_radius="10dp"
                 app:neomorph_elevation="6dp"
@@ -133,6 +127,11 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
                     android:orientation="vertical"
                     android:padding="8dp">
 
@@ -146,7 +145,7 @@
                         android:text="Question1 "
                         android:textAlignment="textStart"
                         android:textColor="#4B339A"
-                        android:textSize="23sp" />
+                        android:textSize="20sp" />
 
                     <RadioGroup
                         android:id="@+id/radio_group"
@@ -168,7 +167,7 @@
                             android:text="Option 1"
                             android:textAlignment="textStart"
                             android:textColor="#7156C7"
-                            android:textSize="17dp" />
+                            android:textSize="14dp" />
 
                         <RadioButton
                             android:id="@+id/radio_button2"
@@ -180,7 +179,7 @@
                             android:text="Option 2"
                             android:textAlignment="textStart"
                             android:textColor="#7156C7"
-                            android:textSize="17dp" />
+                            android:textSize="14dp" />
 
                         <RadioButton
                             android:id="@+id/radio_button3"
@@ -192,7 +191,7 @@
                             android:text="Option 3"
                             android:textAlignment="textStart"
                             android:textColor="#7156C7"
-                            android:textSize="17dp" />
+                            android:textSize="14dp" />
 
                         <RadioButton
                             android:id="@+id/radio_button4"
@@ -204,7 +203,7 @@
                             android:text="Option 4"
                             android:textAlignment="textStart"
                             android:textColor="#7156C7"
-                            android:textSize="17dp" />
+                            android:textSize="14dp" />
                     </RadioGroup>
 
 
@@ -217,7 +216,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 app:neomorph_background_color="#7156C7"
                 app:neomorph_corner_radius="13dp"
                 app:neomorph_elevation="5dp"
@@ -234,7 +233,7 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Next"
                     android:textColor="#ffff"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -243,6 +242,5 @@
 
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
