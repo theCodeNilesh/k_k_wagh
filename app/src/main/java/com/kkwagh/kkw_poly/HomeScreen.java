@@ -20,8 +20,7 @@ public class HomeScreen extends AppCompatActivity {
 
     //this is for image array import all images here
     private int[] mImages = new int[]{
-            R.drawable.welcome, R.drawable.img1,R.drawable.img1_2, R.drawable.img2,R.drawable.img3,R.drawable.img3_2, R.drawable.img4,R.drawable.img4_2, R.drawable.img5,R.drawable.img5_2, R.drawable.img6,R.drawable.img6_2, R.drawable.img7,R.drawable.img7_2, R.drawable.img8,R.drawable.img8_2, R.drawable.img9,R.drawable.img9_2, R.drawable.img10,R.drawable.img10_2, R.drawable.img11,R.drawable.img11_2, R.drawable.img12,R.drawable.img12_2, R.drawable.img13, R.drawable.img13_2
-
+            R.drawable.welcome, R.drawable.img1, R.drawable.img2, R.drawable.img4, R.drawable.img5, R.drawable.img6, R.drawable.img7, R.drawable.img8, R.drawable.img10, R.drawable.img11, R.drawable.img12
     };
 
 
