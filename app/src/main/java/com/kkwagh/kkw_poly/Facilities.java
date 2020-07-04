@@ -30,35 +30,35 @@ public class Facilities extends AppCompatActivity {
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Facilities.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(Facilities.this, Bank.class);
                 startActivity(intent);
             }
         });
         card2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Facilities.this, WorkInProgressActivity.class));
+                startActivity(new Intent(Facilities.this, BusFacility.class));
             }
         });
 
         card3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Facilities.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(Facilities.this, SportsFacility.class);
                 startActivity(intent);
             }
         });
         card4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Facilities.this, WorkInProgressActivity.class));
+                startActivity(new Intent(Facilities.this, GymFacility.class));
             }
         });
 
         card5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Facilities.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(Facilities.this, Canteen.class);
                 startActivity(intent);
             }
         });
@@ -66,7 +66,7 @@ public class Facilities extends AppCompatActivity {
         card6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Facilities.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(Facilities.this, MedicalFacility.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +74,7 @@ public class Facilities extends AppCompatActivity {
         card7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Facilities.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(Facilities.this, HostelFacility.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +82,7 @@ public class Facilities extends AppCompatActivity {
         card8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Facilities.this, WorkInProgressActivity.class);
+                Intent intent = new Intent(Facilities.this, CounsellingFacility.class);
                 startActivity(intent);
             }
         });

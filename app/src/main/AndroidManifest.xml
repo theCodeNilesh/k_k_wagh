@@ -15,7 +15,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".Facilities"></activity>
+        <activity android:name=".CounsellingFacility"></activity>
+        <activity android:name=".HostelFacility" />
+        <activity android:name=".MedicalFacility" />
+        <activity android:name=".GymFacility" />
+        <activity android:name=".SportsFacility" />
+        <activity android:name=".Canteen" />
+        <activity android:name=".BusFacility" />
+        <activity android:name=".Bank" />
+        <activity android:name=".Facilities" />
         <activity android:name=".AlumniSpeak" />
         <activity android:name=".QuizSub" />
         <activity android:name=".QuizLevel" />
