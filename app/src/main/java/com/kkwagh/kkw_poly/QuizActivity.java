@@ -3,6 +3,7 @@
 package com.kkwagh.kkw_poly;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -51,6 +52,8 @@ public class QuizActivity extends AppCompatActivity {
     private int score;
     private boolean answered;
     private long backPressedTime;
+    private SharedPreferences sp;
+    private String userID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +77,10 @@ public class QuizActivity extends AppCompatActivity {
         int categoryID = intent.getIntExtra(QuizSub.EXTRA_CATEGORY_ID, 0);
         String categoryName = intent.getStringExtra(QuizSub.EXTRA_CATEGORY_NAME);
         String difficulty = intent.getStringExtra(QuizLevel.EXTRA_DIFFICULTY);
+
+        sp = getSharedPreferences("login", MODE_PRIVATE);
+        userID = sp.getString("userID", "0");
+        Toast.makeText(QuizActivity.this, userID, Toast.LENGTH_LONG).show();
 
         textViewCategory.setText("Category: " + categoryName);
         textViewDifficulty.setText("Difficulty: " + difficulty);
