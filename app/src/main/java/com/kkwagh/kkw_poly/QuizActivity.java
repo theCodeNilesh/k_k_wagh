@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +23,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Locale;
+
+import static com.kkwagh.kkw_poly.URLenvActivity.quiz_api;
 
 public class QuizActivity extends AppCompatActivity {
     public static final String EXTRA_SCORE = "extraScore";
@@ -54,11 +59,19 @@ public class QuizActivity extends AppCompatActivity {
     private long backPressedTime;
     private SharedPreferences sp;
     private String userID;
+    String finalResult, categoryName, difficulty;
+    String HttpURL = quiz_api;
+    HashMap<String, String> hashMap = new HashMap<>();
+    HttpParser httpParse = new HttpParser();
+    Handler handler = new Handler();
+    String[] arrOfStr;
+    int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        GetQuestions("1", "1", "english", "question");
 
         textViewQuestion = findViewById(R.id.text_view_question);
         textViewCategory = findViewById(R.id.text_view_category);
@@ -75,8 +88,8 @@ public class QuizActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         int categoryID = intent.getIntExtra(QuizSub.EXTRA_CATEGORY_ID, 0);
-        String categoryName = intent.getStringExtra(QuizSub.EXTRA_CATEGORY_NAME);
-        String difficulty = intent.getStringExtra(QuizLevel.EXTRA_DIFFICULTY);
+        categoryName = intent.getStringExtra(QuizSub.EXTRA_CATEGORY_NAME);
+        difficulty = intent.getStringExtra(QuizLevel.EXTRA_DIFFICULTY);
 
         sp = getSharedPreferences("login", MODE_PRIVATE);
         userID = sp.getString("userID", "0");
@@ -259,5 +272,33 @@ public class QuizActivity extends AppCompatActivity {
         outState.putLong(KEY_MILLIS_LEFT, timeLeftInMillis);
         outState.putBoolean(KEY_ANSWERED, answered);
         outState.putParcelableArrayList(KEY_QUESTION_LIST, questionList);
+    }
+
+    public void GetQuestions(final String userID, final String difficulty, final String categoryName, final String data) {
+        class GetQuestionsClass extends AsyncTask<String, Void, String> {
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+            }
+
+            @Override
+            protected void onPostExecute(String httpResponseMsg) {
+                super.onPostExecute(httpResponseMsg);
+                arrOfStr = httpResponseMsg.split("\",\"");
+                //Toast.makeText(QuizActivity.this, arrOfStr[0], Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+                hashMap.put("id", params[0]);
+                hashMap.put("level", params[1]);
+                hashMap.put("subject", params[2]);
+                hashMap.put("data", params[3]);
+                finalResult = httpParse.postRequest(hashMap, HttpURL, true);
+                return finalResult;
+            }
+        }
+        GetQuestionsClass getQuestionsClass = new GetQuestionsClass();
+        getQuestionsClass.execute(userID, difficulty, categoryName, "question");
     }
 }

@@ -23,7 +23,7 @@ public class HttpParser {
     StringBuilder stringBuilder = new StringBuilder();
     URL url;
 
-    public String postRequest(HashMap<String, String> Data, String HttpUrlHolder) {
+    public String postRequest(HashMap<String, String> Data, String HttpUrlHolder, boolean... quiz) {
 
         try {
             url = new URL(HttpUrlHolder);
@@ -40,7 +40,7 @@ public class HttpParser {
             bufferedWriter.flush();
             bufferedWriter.close();
             outputStream.close();
-
+            boolean MyArg1 = (quiz.length >= 1) && quiz[0];
             if (httpURLConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
                 bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
                 FinalHttpData = bufferedReader.readLine();
