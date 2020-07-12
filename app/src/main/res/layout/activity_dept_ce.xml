@@ -29,8 +29,8 @@
 
             <TextView
                 android:id="@+id/verify_text"
-                android:layout_width="189dp"
-                android:layout_height="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -38,7 +38,7 @@
                 android:layout_marginTop="25dp"
                 android:fontFamily="@font/montserrat_medium"
                 android:gravity="left"
-                android:text="Chemical Engineering "
+                android:text="Chemical\nEngineering "
                 android:textColor="#ffff"
                 android:textSize="25sp" />
 

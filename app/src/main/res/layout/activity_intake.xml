@@ -34,13 +34,14 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/montserrat_medium"
                 android:gravity="left"
-                android:text="Intake "
+                android:text="Admission\nSeats "
                 android:textColor="#ffff"
-                android:textSize="40sp" />
+                android:textSize="28sp" />
 
             <ImageView
                 android:id="@+id/verify_top_circle2"
@@ -88,7 +89,8 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp">
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp">
 
                     <TableRow>
 
@@ -109,7 +111,7 @@
                             android:layout_weight="1"
                             android:fontFamily="@font/baloo2_semibold"
                             android:gravity="center"
-                            android:text="Regular shift Intake"
+                            android:text="Seats Available"
                             android:textColor="#4B339A"
                             android:textSize="18sp" />
 
@@ -135,7 +137,7 @@
                             android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:padding="10dp"
-                            android:text="120+60"
+                            android:text="180"
                             android:textColor="#7156C7"
                             android:textSize="14sp" />
 
@@ -217,7 +219,7 @@
                             android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:padding="10dp"
-                            android:text="60+60"
+                            android:text="120"
                             android:textColor="#7156C7"
                             android:textSize="14sp"
 
@@ -299,7 +301,7 @@
                             android:fontFamily="@font/montserrat_medium"
                             android:gravity="center"
                             android:padding="10dp"
-                            android:text="60+60"
+                            android:text="120"
                             android:textColor="#7156C7"
                             android:textSize="14sp"
 

@@ -25,7 +25,7 @@
         android:fontFamily="@font/montserrat_medium"
         android:text="Quiz\nDifficulty "
         android:textColor="#ffff"
-        android:textSize="30sp"
+        android:textSize="27sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

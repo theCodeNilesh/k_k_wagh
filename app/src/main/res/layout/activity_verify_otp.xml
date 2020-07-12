@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/verify_top"
-        android:layout_width="210dp"
-        android:layout_height="180dp"
+        android:layout_width="190dp"
+        android:layout_height="160dp"
         android:scaleType="fitXY"
         android:src="@drawable/login_top"
         android:transitionName="top_image"
@@ -16,8 +16,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="189dp"
-        android:layout_height="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/montserrat_medium"
@@ -29,8 +29,8 @@
 
     <ImageView
         android:id="@+id/verify_top_circle2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="90dp"
         android:scaleType="fitXY"

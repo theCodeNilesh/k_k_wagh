@@ -31,12 +31,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="132dp"
-        android:layout_height="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginRight="15dp"
         android:fontFamily="@font/montserrat_medium"
-        android:text="Contact Us"
+        android:text="Contac\nUs"
         android:textAlignment="center"
         android:textColor="#ffff"
         android:textSize="32sp"
