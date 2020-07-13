@@ -123,7 +123,7 @@ public class HomeScreen extends AppCompatActivity {
         card3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeScreen.this, QuizSub.class);
+                Intent intent = new Intent(HomeScreen.this, QuizActivity.class);
                 startActivity(intent);
             }
         });
