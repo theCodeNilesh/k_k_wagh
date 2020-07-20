@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="m">
         <activity android:name=".CounsellingFacility"></activity>
         <activity android:name=".HostelFacility" />
@@ -25,8 +26,6 @@
         <activity android:name=".Bank" />
         <activity android:name=".Facilities" />
         <activity android:name=".AlumniSpeak" />
-        <activity android:name=".QuizSub" />
-        <activity android:name=".QuizLevel" />
         <activity android:name=".Intake" />
         <activity android:name=".DeptMe" />
         <activity android:name=".DeptCv" />
@@ -51,6 +50,8 @@
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".AboutUs" />
+        <activity android:name=".QuizSubjectActivity" />
+        <activity android:name=".QuizLevelActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".ContactUs" />
         <activity android:name=".Achievment" />

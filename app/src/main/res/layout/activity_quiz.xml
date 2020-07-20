@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
-    tools:context=".QuizActivity">
+    tools:context=".QuizSubjectActivity">
 
     <ImageView
         android:id="@+id/top_circle"
@@ -50,7 +50,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_medium"
         android:freezesText="true"
-        android:text="Category: "
+        android:text="Subject: "
         android:textColor="#4B339A"
         android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"

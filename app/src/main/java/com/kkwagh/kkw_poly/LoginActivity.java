@@ -127,7 +127,7 @@ public class LoginActivity extends AppCompatActivity {
             protected void onPostExecute(String httpResponseMsg) {
                 super.onPostExecute(httpResponseMsg);
                 //Toast.makeText(LoginActivity.this, httpResponseMsg, Toast.LENGTH_LONG).show();
-                sp.edit().putString("userID", httpResponseMsg).commit();
+                sp.edit().putString("userID", httpResponseMsg).apply();
             }
 
             @Override
