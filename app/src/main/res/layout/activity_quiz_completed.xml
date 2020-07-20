@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".QuizCompleted">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="Thank"
+        android:textColor="#6A31AB"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/animation_view1"
+        app:layout_constraintEnd_toStartOf="@id/txt2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/courgette_regular"
+        android:gravity="center"
+        android:text="You"
+        android:textColor="#6A31AB"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/animation_view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt1"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view1"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="7580-amazing-tick.json"
+        app:lottie_loop="true"/>
+
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/homescreen_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toStartOf="@id/playagain_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view1"
+        app:neomorph_background_color="#7156C7"
+        app:neomorph_corner_radius="13dp"
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="#ffff"
+        app:neomorph_shadow_color="#899CD9"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <Button
+            android:id="@+id/homeScreen"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_btn_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Home Screen"
+            android:textColor="#ffff"
+            android:textSize="14sp" />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/playagain_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homescreen_btn"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view1"
+        app:neomorph_background_color="#7156C7"
+        app:neomorph_corner_radius="13dp"
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="#ffff"
+        app:neomorph_shadow_color="#899CD9"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_btn_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Play Again"
+            android:textColor="#ffff"
+            android:textSize="14sp" />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
