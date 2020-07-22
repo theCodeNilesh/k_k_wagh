@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_fileName="7580-amazing-tick.json"
-        app:lottie_loop="true"/>
+        app:lottie_loop="false"/>
 
 
     <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
