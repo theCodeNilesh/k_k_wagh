@@ -88,7 +88,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="English"
                     android:textColor="#ffff"
-                    android:textSize="16sp" />
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -113,7 +114,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Physics"
                     android:textColor="#ffff"
-                    android:textSize="16sp" />
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -138,7 +140,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Chemistry"
                     android:textColor="#ffff"
-                    android:textSize="16sp" />
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -163,7 +166,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Maths"
                     android:textColor="#ffff"
-                    android:textSize="16sp" />
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 

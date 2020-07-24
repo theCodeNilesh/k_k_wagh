@@ -225,7 +225,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Confirm"
                     android:textColor="#ffff"
-                    android:textSize="16sp" />
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 

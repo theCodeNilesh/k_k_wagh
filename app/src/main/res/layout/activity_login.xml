@@ -175,7 +175,8 @@
                 android:fontFamily="@font/montserrat_medium"
                 android:text="LogIn"
                 android:textColor="#ffff"
-                android:textSize="16sp" />
+                android:textAllCaps="false"
+                android:textSize="16sp"/>
 
         </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
@@ -212,7 +213,8 @@
                 android:fontFamily="@font/montserrat_medium"
                 android:text="Forgot Password"
                 android:textColor="#2C0F87"
-                android:textSize="10sp" />
+                android:textAllCaps="false"
+                android:textSize="10sp"/>
         </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
 
@@ -238,7 +240,8 @@
                 android:fontFamily="@font/montserrat_medium"
                 android:text="Sign UP"
                 android:textColor="#2C0F87"
-                android:textSize="10sp" />
+                android:textAllCaps="false"
+                android:textSize="10sp"/>
         </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
 
