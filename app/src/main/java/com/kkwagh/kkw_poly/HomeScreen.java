@@ -35,7 +35,7 @@ public class HomeScreen extends AppCompatActivity {
         //declaring hooks
         NeomorphFrameLayout image_sl;
         CardView card1, card2, card3, card4, card5, card6, card7, card8;
-        Button logout;
+        Button profile;
         final SharedPreferences sp;
 
         //finding hooks
@@ -48,7 +48,7 @@ public class HomeScreen extends AppCompatActivity {
         card6 = findViewById(R.id.card6);
         card7 = findViewById(R.id.card7);
         card8 = findViewById(R.id.card8);
-        logout = findViewById(R.id.logout);
+        profile = findViewById(R.id.profile);
         sp = getSharedPreferences("login", MODE_PRIVATE);
 
 
@@ -56,12 +56,12 @@ public class HomeScreen extends AppCompatActivity {
         carouselView.setPageCount(mImages.length);
 
 
-        logout.setOnClickListener(new View.OnClickListener() {
+        profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sp.edit().putBoolean("logged", true).apply();
-                sp.edit().putString("userID", "0").apply();
-                startActivity(new Intent(HomeScreen.this, LoginActivity.class));
+//                sp.edit().putBoolean("logged", true).apply();
+//                sp.edit().putString("userID", "0").apply();
+                startActivity(new Intent(HomeScreen.this, ProfileActivity.class));
                 finish();
             }
         });
