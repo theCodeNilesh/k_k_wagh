@@ -37,6 +37,7 @@ public class QuizCompleted extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(QuizCompleted.this, HomeScreen.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -45,9 +46,15 @@ public class QuizCompleted extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(QuizCompleted.this, QuizSubjectActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
+    }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(QuizCompleted.this, HomeScreen.class));
+        finish();
 
     }
 }

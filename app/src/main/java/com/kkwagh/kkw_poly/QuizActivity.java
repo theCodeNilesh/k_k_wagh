@@ -34,8 +34,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Random;
 
-import static com.kkwagh.kkw_poly.URLenvActivity.localIP;
+import static com.kkwagh.kkw_poly.URLenvActivity.ip;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -65,7 +66,7 @@ public class QuizActivity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences("login", MODE_PRIVATE);
         final String userID = sp.getString("userID", "0");
         Log.d("POST", userID);
-        String url = localIP + "get_group.php";
+        String url = ip + "get_group.php";
 
         question_text_view = findViewById(R.id.text_view_question);
 
@@ -106,66 +107,66 @@ public class QuizActivity extends AppCompatActivity {
         if (lastIntent.get("Subject").toString().equals("English")) {
             if (group.equals("1")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/English/quiz_g1_l1.php";
+                    quizURL = ip + "quiz/English/quiz_g1_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/English/quiz_g1_l2.php";
+                    quizURL = ip + "quiz/English/quiz_g1_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/English/quiz_g1_l3.php";
+                    quizURL = ip + "quiz/English/quiz_g1_l3.php";
             } else if (group.equals("2")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/English/quiz_g2_l1.php";
+                    quizURL = ip + "quiz/English/quiz_g2_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/English/quiz_g2_l2.php";
+                    quizURL = ip + "quiz/English/quiz_g2_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/English/quiz_g2_l3.php";
+                    quizURL = ip + "quiz/English/quiz_g2_l3.php";
             }
         } else if (lastIntent.get("Subject").toString().equals("Physics")) {
             if (group.equals("1")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/Physics/quiz_g1_l1.php";
+                    quizURL = ip + "quiz/Physics/quiz_g1_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/Physics/quiz_g1_l2.php";
+                    quizURL = ip + "quiz/Physics/quiz_g1_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/Physics/quiz_g1_l3.php";
+                    quizURL = ip + "quiz/Physics/quiz_g1_l3.php";
             } else if (group.equals("2")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/Physics/quiz_g2_l1.php";
+                    quizURL = ip + "quiz/Physics/quiz_g2_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/Physics/quiz_g2_l2.php";
+                    quizURL = ip + "quiz/Physics/quiz_g2_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/Physics/quiz_g2_l3.php";
+                    quizURL = ip + "quiz/Physics/quiz_g2_l3.php";
             }
         } else if (lastIntent.get("Subject").toString().equals("Maths")) {
             if (group.equals("1")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/Maths/quiz_g1_l1.php";
+                    quizURL = ip + "quiz/Maths/quiz_g1_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/Maths/quiz_g1_l2.php";
+                    quizURL = ip + "quiz/Maths/quiz_g1_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/Maths/quiz_g1_l3.php";
+                    quizURL = ip + "quiz/Maths/quiz_g1_l3.php";
             } else if (group.equals("2")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/Maths/quiz_g2_l1.php";
+                    quizURL = ip + "quiz/Maths/quiz_g2_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/Maths/quiz_g2_l2.php";
+                    quizURL = ip + "quiz/Maths/quiz_g2_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/Maths/quiz_g2_l3.php";
+                    quizURL = ip + "quiz/Maths/quiz_g2_l3.php";
             }
         } else if (lastIntent.get("Subject").toString().equals("Chemistry")) {
             if (group.equals("1")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/Chemistry/quiz_g1_l1.php";
+                    quizURL = ip + "quiz/Chemistry/quiz_g1_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/Chemistry/quiz_g1_l2.php";
+                    quizURL = ip + "quiz/Chemistry/quiz_g1_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/Chemistry/quiz_g1_l3.php";
+                    quizURL = ip + "quiz/Chemistry/quiz_g1_l3.php";
             } else if (group.equals("2")) {
                 if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = localIP + "quiz/Chemistry/quiz_g2_l1.php";
+                    quizURL = ip + "quiz/Chemistry/quiz_g2_l1.php";
                 else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = localIP + "quiz/Chemistry/quiz_g2_l2.php";
+                    quizURL = ip + "quiz/Chemistry/quiz_g2_l2.php";
                 else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = localIP + "quiz/Chemistry/quiz_g2_l3.php";
+                    quizURL = ip + "quiz/Chemistry/quiz_g2_l3.php";
             }
         }
 
@@ -211,7 +212,10 @@ public class QuizActivity extends AppCompatActivity {
 
     private void quiz() {
         questionCountTotal = questions_list.size();
-        Collections.shuffle(questions_list);
+        long seed = new Random().nextLong();
+        Collections.shuffle(questions_list, new Random(seed));
+        Collections.shuffle(options_list, new Random(seed));
+        Collections.shuffle(answer_list, new Random(seed));
         showNextQuestion();
         buttonConfirmNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -220,7 +224,7 @@ public class QuizActivity extends AppCompatActivity {
                     if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked())
                         checkAnswer();
                     else
-                        Toast.makeText(QuizActivity.this, "Please sele0ct an answer", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuizActivity.this, "Please select an answer", Toast.LENGTH_SHORT).show();
                 else
                     showNextQuestion();
             }
@@ -230,10 +234,14 @@ public class QuizActivity extends AppCompatActivity {
 
     private void showNextQuestion() {
         rbGroup.clearCheck();
-        if (questionCounter < questionCountTotal) {
+        rb1.setEnabled(true);
+        rb2.setEnabled(true);
+        rb3.setEnabled(true);
+        rb4.setEnabled(true);
+        if (questionCounter < 10) {
             currentQuestion = questions_list.get(questionCounter);
             question_index = questions_list.indexOf(currentQuestion);
-            question_text_view.setText(currentQuestion);
+            question_text_view.setText("Q" + (questionCounter + 1) + ": " + currentQuestion);
             String[] temp = options_list.get(question_index).split(",");
             rb1.setText(temp[0]);
             rb2.setText(temp[1]);
@@ -280,6 +288,10 @@ public class QuizActivity extends AppCompatActivity {
 
     private void checkAnswer() {
         answered = true;
+        rb1.setEnabled(false);
+        rb2.setEnabled(false);
+        rb3.setEnabled(false);
+        rb4.setEnabled(false);
         countDownTimer.cancel();
         RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
         int answerNr = rbGroup.indexOfChild(rbSelected) + 1;
@@ -293,7 +305,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void finishQuiz() {
-        startActivity(new Intent(QuizActivity.this, WorkInProgressActivity.class));
+        startActivity(new Intent(QuizActivity.this, QuizCompleted.class));
         finish();
     }
 
