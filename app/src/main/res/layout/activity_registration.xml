@@ -547,6 +547,7 @@
                 android:fontFamily="@font/montserrat_medium"
                 android:text="Save"
                 android:textColor="#ffff"
+                android:textAllCaps="false"
                 android:textSize="16sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>

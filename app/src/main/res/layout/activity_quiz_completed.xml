@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_fileName="7580-amazing-tick.json"
-        app:lottie_loop="true"/>
+        app:lottie_loop="false"/>
 
 
     <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
@@ -86,7 +86,8 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Home Screen"
             android:textColor="#ffff"
-            android:textSize="14sp" />
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
     </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
     <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
@@ -116,7 +117,9 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="Play Again"
             android:textColor="#ffff"
-            android:textSize="14sp" />
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            />
     </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

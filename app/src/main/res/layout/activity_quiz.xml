@@ -233,7 +233,8 @@
                     android:fontFamily="@font/montserrat_medium"
                     android:text="Next"
                     android:textColor="#ffff"
-                    android:textSize="14sp" />
+                    android:textAllCaps="false"
+                    android:textSize="14sp"/>
 
             </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
