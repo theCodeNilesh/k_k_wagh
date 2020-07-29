@@ -54,7 +54,7 @@ public class QuizActivity extends AppCompatActivity {
     private Button buttonConfirmNext;
     private ColorStateList textColorDefaultCd;
     private int questionCounter, question_index, questionCountTotal, score;
-    private String currentQuestion;
+    private String currentQuestion, quizURL;
     private boolean answered;
 
     @Override
@@ -87,6 +87,72 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 group = response;
+                quizURL = "";
+                if (lastIntent.get("Subject").toString().equals("English")) {
+                    if (group.equals("1")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/English/quiz_g1_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/English/quiz_g1_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/English/quiz_g1_l3.php";
+                    } else if (group.equals("2")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/English/quiz_g2_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/English/quiz_g2_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/English/quiz_g2_l3.php";
+                    }
+                } else if (lastIntent.get("Subject").toString().equals("Physics")) {
+                    if (group.equals("1")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/Physics/quiz_g1_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/Physics/quiz_g1_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/Physics/quiz_g1_l3.php";
+                    } else if (group.equals("2")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/Physics/quiz_g2_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/Physics/quiz_g2_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/Physics/quiz_g2_l3.php";
+                    }
+                } else if (lastIntent.get("Subject").toString().equals("Maths")) {
+                    if (group.equals("1")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/Maths/quiz_g1_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/Maths/quiz_g1_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/Maths/quiz_g1_l3.php";
+                    } else if (group.equals("2")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/Maths/quiz_g2_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/Maths/quiz_g2_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/Maths/quiz_g2_l3.php";
+                    }
+                } else if (lastIntent.get("Subject").toString().equals("Chemistry")) {
+                    if (group.equals("1")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/Chemistry/quiz_g1_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/Chemistry/quiz_g1_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/Chemistry/quiz_g1_l3.php";
+                    } else if (group.equals("2")) {
+                        if (lastIntent.get("Difficulty").toString().equals("Low"))
+                            quizURL = ip + "quiz/Chemistry/quiz_g2_l1.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("Medium"))
+                            quizURL = ip + "quiz/Chemistry/quiz_g2_l2.php";
+                        else if (lastIntent.get("Difficulty").toString().equals("High"))
+                            quizURL = ip + "quiz/Chemistry/quiz_g2_l3.php";
+                    }
+                }
             }
         }, new Response.ErrorListener() {
             @Override
@@ -103,72 +169,6 @@ public class QuizActivity extends AppCompatActivity {
         };
         requestQueue.add(stringRequest);
 
-        String quizURL = "";
-        if (lastIntent.get("Subject").toString().equals("English")) {
-            if (group.equals("1")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/English/quiz_g1_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/English/quiz_g1_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/English/quiz_g1_l3.php";
-            } else if (group.equals("2")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/English/quiz_g2_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/English/quiz_g2_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/English/quiz_g2_l3.php";
-            }
-        } else if (lastIntent.get("Subject").toString().equals("Physics")) {
-            if (group.equals("1")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/Physics/quiz_g1_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/Physics/quiz_g1_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/Physics/quiz_g1_l3.php";
-            } else if (group.equals("2")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/Physics/quiz_g2_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/Physics/quiz_g2_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/Physics/quiz_g2_l3.php";
-            }
-        } else if (lastIntent.get("Subject").toString().equals("Maths")) {
-            if (group.equals("1")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/Maths/quiz_g1_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/Maths/quiz_g1_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/Maths/quiz_g1_l3.php";
-            } else if (group.equals("2")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/Maths/quiz_g2_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/Maths/quiz_g2_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/Maths/quiz_g2_l3.php";
-            }
-        } else if (lastIntent.get("Subject").toString().equals("Chemistry")) {
-            if (group.equals("1")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/Chemistry/quiz_g1_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/Chemistry/quiz_g1_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/Chemistry/quiz_g1_l3.php";
-            } else if (group.equals("2")) {
-                if (lastIntent.get("Difficulty").toString().equals("Low"))
-                    quizURL = ip + "quiz/Chemistry/quiz_g2_l1.php";
-                else if (lastIntent.get("Difficulty").toString().equals("Medium"))
-                    quizURL = ip + "quiz/Chemistry/quiz_g2_l2.php";
-                else if (lastIntent.get("Difficulty").toString().equals("High"))
-                    quizURL = ip + "quiz/Chemistry/quiz_g2_l3.php";
-            }
-        }
 
         Log.d("URL", quizURL);
 
