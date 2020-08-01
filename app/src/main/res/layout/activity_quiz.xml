@@ -125,7 +125,7 @@
                 app:neomorph_view_type="rectangular">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left|center_vertical"
                     android:layout_marginLeft="5dp"
@@ -137,8 +137,8 @@
 
                     <TextView
                         android:id="@+id/text_view_question"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
                         android:layout_gravity="left"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/baloo2_semibold"

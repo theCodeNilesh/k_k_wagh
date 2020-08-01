@@ -8,4 +8,5 @@ public class URLenvActivity {
     public static String register_api = ip + "register_api.php";
     public static String reset_password = ip + "register_api.php";
     public static String sendOTP_api = ip + "sendOTP_api.php";
+    public static String quiz_api = ip + "quiz_api.php";
 }
