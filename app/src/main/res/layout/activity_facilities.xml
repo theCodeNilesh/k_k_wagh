@@ -41,12 +41,12 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="35dp"
-                    android:fontFamily="@font/montserrat_medium"
+                    android:fontFamily="@font/montserrat_semibold"
                     android:gravity="left"
                     android:text="Facilities"
                     android:textAlignment="center"
                     android:textColor="#ffff"
-                    android:textSize="30sp"/>
+                    android:textSize="28sp" />
 
                 <ImageView
                     android:id="@+id/verify_top_circle2"
@@ -112,11 +112,11 @@
                                 android:layout_width="95dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Bank"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="18dp" />
 
                         </LinearLayout>
 
@@ -158,11 +158,11 @@
                                 android:layout_width="95dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Bus "
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="18dp" />
 
                         </LinearLayout>
 
@@ -203,11 +203,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Sports "
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="18dp" />
 
                         </LinearLayout>
 
@@ -249,11 +249,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Gymnasium"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="16dp" />
 
 
                         </LinearLayout>
@@ -297,11 +297,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
                                 android:layout_marginBottom="0dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Canteen"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="17dp" />
 
                         </LinearLayout>
 
@@ -344,11 +344,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Medical"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="17dp" />
 
 
                         </LinearLayout>
@@ -394,11 +394,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Hostel &amp; Mess "
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="16dp" />
 
 
                         </LinearLayout>
@@ -441,11 +441,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Counselling"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="19dp" />
+                                android:textSize="16dp" />
 
 
                         </LinearLayout>

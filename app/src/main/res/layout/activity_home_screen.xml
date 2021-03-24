@@ -21,15 +21,14 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo2_semibold"
-            android:text="K K Wagh Polytechnic, Nashik"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="K K Wagh Polytechnic"
             android:textAlignment="center"
             android:textColor="#5A3FB1"
             android:layout_alignParentLeft="true"
             android:layout_margin="5dp"
             android:paddingLeft="5dp"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/profile"
@@ -157,7 +156,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="About Us"
                                 android:textColor="#3B356E"
                                 android:textSize="15dp" />
@@ -205,7 +204,7 @@
                                 android:layout_width="107dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="-20dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Departments/Courses"
                                 android:textAlignment="center"
                                 android:textColor="#3B356E"
@@ -252,7 +251,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Quiz"
                                 android:textColor="#3B356E"
                                 android:textSize="15dp" />
@@ -298,7 +297,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Why Join KKW"
                                 android:textColor="#3B356E"
                                 android:textSize="15dp" />
@@ -344,7 +343,7 @@
                                 android:layout_width="80dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Admission Process"
                                 android:textAlignment="center"
                                 android:textColor="#3B356E"
@@ -391,7 +390,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Achievements"
                                 android:textColor="#3B356E"
                                 android:textSize="15dp" />
@@ -436,7 +435,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="-6dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Alumni Speak"
                                 android:textColor="#3B356E"
                                 android:textSize="15dp" />
@@ -484,7 +483,7 @@
                                 android:layout_width="107dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="-6dp"
-                                android:fontFamily="@font/montserrat_medium"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Contact Us"
                                 android:textAlignment="center"
                                 android:textColor="#3B356E"

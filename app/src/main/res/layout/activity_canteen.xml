@@ -36,7 +36,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/montserrat_medium"
+                android:fontFamily="@font/montserrat_semibold"
                 android:gravity="left"
                 android:text="Canteen\nFacility"
                 android:textColor="#ffff"
@@ -101,6 +101,8 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
 
 
@@ -138,7 +140,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Features of Canteen"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -156,6 +158,8 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
                 </LinearLayout>
 
@@ -191,7 +195,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Facilities Provided"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -209,6 +213,8 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
                 </LinearLayout>
 
@@ -244,7 +250,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Types of Food"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -262,6 +268,7 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
                         />
                 </LinearLayout>
 

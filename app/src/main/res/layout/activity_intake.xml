@@ -37,11 +37,11 @@
                 android:layout_marginStart="9dp"
                 android:layout_marginLeft="9dp"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/montserrat_medium"
+                android:fontFamily="@font/montserrat_semibold"
                 android:gravity="left"
                 android:text="Admission\nSeats "
                 android:textColor="#ffff"
-                android:textSize="28sp" />
+                android:textSize="26sp" />
 
             <ImageView
                 android:id="@+id/verify_top_circle2"
@@ -99,7 +99,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:fontFamily="@font/baloo2_semibold"
+                            android:fontFamily="@font/montserrat_semibold"
                             android:gravity="center"
                             android:text="Name of the course"
                             android:textColor="#4B339A"
@@ -109,7 +109,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:fontFamily="@font/baloo2_semibold"
+                            android:fontFamily="@font/montserrat_semibold"
                             android:gravity="center"
                             android:text="Seats Available"
                             android:textColor="#4B339A"

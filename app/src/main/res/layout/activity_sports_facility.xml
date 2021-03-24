@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:fontFamily="@font/montserrat_medium"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="Sports"
         android:textColor="#ffff"
         android:textSize="36sp"

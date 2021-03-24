@@ -36,7 +36,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="25dp"
-                android:fontFamily="@font/montserrat_medium"
+                android:fontFamily="@font/montserrat_semibold"
                 android:gravity="left"
                 android:text="Civil\nEngineering"
                 android:textColor="#ffff"
@@ -95,7 +95,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Vision"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -112,6 +112,8 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
 
 
@@ -149,7 +151,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Mission"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -167,6 +169,8 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
                 </LinearLayout>
 
@@ -202,7 +206,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="About Department"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -220,6 +224,8 @@
                         android:textAlignment="center"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
                 </LinearLayout>
 

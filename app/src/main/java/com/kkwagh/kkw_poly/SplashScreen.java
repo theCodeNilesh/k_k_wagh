@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 1500;
+    private static final int SPLASH_SCREEN = 1500;
     SharedPreferences sp;
 
     @Override
@@ -53,7 +53,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 sp = getSharedPreferences("login", MODE_PRIVATE);
                 if (sp.getBoolean("logged", true)) {
-                    Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
+                    Intent intent = new Intent(SplashScreen.this, HomeScreen.class);
                     startActivity(intent);
                     finish();
                 } else {

@@ -35,7 +35,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/montserrat_medium"
+                android:fontFamily="@font/montserrat_semibold"
                 android:gravity="left"
                 android:text="Admission\nProcess"
                 android:textAlignment="textEnd"
@@ -90,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Steps for admission"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -107,6 +107,7 @@
                         android:textColor="#7156C7"
                         android:textSize="14sp"
 
+
                         />
 
                     <TextView
@@ -119,7 +120,9 @@
                         android:text="2. Read the instruction in the information manual and fill up online form for admission and upload the necessary documents along with candidate photograph and sign on website:  www.dte.maharashtra.gov.in"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+
+                        />
 
                     <TextView
                         android:layout_width="297dp"
@@ -132,6 +135,8 @@
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
 
                         />
 
@@ -145,6 +150,7 @@
                         android:text="4. Check the provisional merit list and update the information for any correction during grievance period only."
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -157,6 +163,7 @@
                         android:text="5. Check the Final merit list."
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -169,6 +176,7 @@
                         android:text="6. Confirm the option form as per the State CET cell Schedule and refer to the seat allotment online."
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -181,6 +189,7 @@
                         android:text="7. Report to Admission Reporting Centre (ARC) to accept your seat preference."
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -193,6 +202,7 @@
                         android:text="8. If seat is accepted (Freeze Option), then report to the final allotted institute for admission with all Original documents."
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
 
@@ -225,7 +235,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="List of documents:"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -239,6 +249,7 @@
                         android:text="1. SSC/HSC Mark sheet"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -251,6 +262,7 @@
                         android:text="2.Mark sheet of 8th and 9th std./proforma Z"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:lineSpacingExtra="2dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -260,9 +272,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="3.  Caste certificate (Reserved Categories)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="3.Caste certificate (Reserved Categories)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -272,9 +285,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="4. Income certificate issued by competent authority(TFWS/All Reserved Categories)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="4.Income certificate issued by competent authority(TFWS/All Reserved Categories)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -284,9 +298,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="5. Issued by competent authority  (TFWS/All Reserved Categories)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="5.Issued by competent authority  (TFWS/All Reserved Categories)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -296,9 +311,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="6.  Cast Validity for Reserved Categories ( for admission after HSC Science)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="6.Cast Validity for Reserved Categories ( for admission after HSC Science)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -308,9 +324,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="7.  School/Collage Leaving Certificate"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="7.School/Collage Leaving Certificate"
                         android:textSize="14sp" />
 
                     <TextView
@@ -320,9 +337,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="8. Nationality/Birth Certificates"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="8.Nationality/Birth Certificates"
                         android:textSize="14sp" />
 
                     <TextView
@@ -332,9 +350,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="9. Domicile Certificate"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="9.Domicile Certificate"
                         android:textSize="14sp" />
 
                     <TextView
@@ -344,9 +363,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="10. Non-Creamy Layer(OBC/SBC/NT/VJ/DT)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="10.Non-Creamy Layer(OBC/SBC/NT/VJ/DT)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -356,10 +376,12 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="11.  Certificate of Drawing Grade Examination(Intermediate)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:text="11.Certificate of Drawing Grade Examination(Intermediate)"
+
 
                         />
 
@@ -370,9 +392,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="12. Aadhar Card"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="12.Aadhar Card"
                         android:textSize="14sp" />
 
                     <TextView
@@ -382,9 +405,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="13. Nationalized Bank Passbook( For Scholarship)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="13.Nationalized Bank Passbook( For Scholarship)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -394,9 +418,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="14. Ration Card ( For Scholarship)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="14.Ration Card ( For Scholarship)"
                         android:textSize="14sp" />
 
 
@@ -429,7 +454,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="List of scholarships::"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -441,9 +466,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:padding="8dp"
                         android:justificationMode="inter_word"
-                        android:text="1. Social welfare department of Govt.of Maharashtra(for SC/OBC/NT-VJ-DT/SBC Categories)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="1.Social welfare department of Govt.of Maharashtra(for SC/OBC/NT-VJ-DT/SBC Categories)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -453,9 +479,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="2. Tribal development department of Govt.of Maharashtra(for ST Categories)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="2.Tribal development department of Govt.of Maharashtra(for ST Categories)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -465,9 +492,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="3. Scholarship for minority communities(Muslim/Shikh/Christian/Jain/Parsi)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="3.Scholarship for minority communities(Muslim/Shikh/Christian/Jain/Parsi)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -477,9 +505,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="4. MSBTE Scholarship for toppers(for meritorious candidates having economical poor family income)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="4.MSBTE Scholarship for toppers(for meritorious candidates having economical poor family income)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -489,9 +518,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="5. Rajashri Chhatrapati Shahu Maharaj Scholarship (EBC)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="5.Rajashri Chhatrapati Shahu Maharaj Scholarship (EBC)"
                         android:textSize="14sp" />
 
                     <TextView
@@ -501,9 +531,10 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="6. Other Scholarship are also available (for meritorious and economically poor family income)"
+                        android:lineSpacingExtra="2dp"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
+                        android:text="6.Other Scholarship are also available (for meritorious and economically poor family income)"
                         android:textSize="14sp" />
 
 

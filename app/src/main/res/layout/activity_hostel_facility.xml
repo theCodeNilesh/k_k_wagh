@@ -36,7 +36,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/montserrat_medium"
+                android:fontFamily="@font/montserrat_semibold"
                 android:gravity="left"
                 android:text="Hostel &amp;\nMess\nFacility "
                 android:textColor="#ffff"
@@ -95,13 +95,15 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
                         android:text="Karmaveer Boy's Hostel and Geetai Girl's Hostel\nFacilities Available:"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
                         android:textSize="20sp"
+                        android:lineSpacingExtra="1dp"
+
                         />
 
                     <TextView
@@ -115,6 +117,8 @@
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
                         android:textSize="14sp"
+                        android:lineSpacingExtra="2dp"
+
                         />
 
 

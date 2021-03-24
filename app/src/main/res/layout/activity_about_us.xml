@@ -74,6 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 app:neomorph_background_color="@color/bgcolor"
                 app:neomorph_corner_radius="10dp"
                 app:neomorph_elevation="6dp"
@@ -87,11 +88,13 @@
                     android:layout_height="274dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:padding="5dp"
                     android:text="The institute was established in the year 1983 at Bhausaheb Nagar, Dist. Nashik, later shifted to Hirabai Haridas Vidyanagari, Nashik in 1992. It is fully developed and has excellent infrastructure with sprawling lush green campus named Hirabai Haridas Vidyanagari. K. K. Wagh education society has got permission to start 2nd shift in the exsting K. K. Wagh Polytechnic from the academic year 2008-09."
                     android:textAlignment="center"
                     android:textColor="#7156C7"
+                    android:lineSpacingExtra="3dp"
                     android:textSize="16sp" />
 
 
@@ -121,7 +124,7 @@
                         android:layout_height="40dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/baloo2_semibold"
+                        android:fontFamily="@font/montserrat_semibold"
                         android:text="Salient Features:"
                         android:textAlignment="center"
                         android:textColor="#4B339A"
@@ -133,7 +136,48 @@
                         android:fontFamily="@font/montserrat_medium"
                         android:justificationMode="inter_word"
                         android:padding="8dp"
-                        android:text="1. 35 years wide experience \n\n2. Student focused education \n\n3. Good infrastructure \n\n4. Qualified and Experienced staff \n\n5. Free Leased Line and Broad band    Internet Facility \n\n6. Open access in library \n\n7. Excellent Higher Study and Placement Record \n\n8. Good industry interaction \n\n9. Regular Industrial Visits and Expert Talks \n\n10. Monthly progress report scheme for first year \n\n11. Spacious playground with tennis, volleyball and basketball courts \n\n12. Linked with city by college bus and city buses from all parts of the city \n\n13.In campus hostel and mess facilities for outstation students \n\n14. Language Laboratory \n\n15. Conducive academic atmosphere \n\n16. State of art Laboratories \n\n17. Modern teaching learning methodology and tools \n\n18. Excellent Final Year Results \n\n19. 24hrs Power Backup (320 KVA Genset) \n\n20. Excellent gymnasium \n\n21. Mentor scheme for individual attention \n\n22. Active Institute Industry Partnership Cell (IIPC)"
+                        android:lineSpacingExtra="10dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#7156C7"
+                        android:textSize="14sp"
+                        android:text="1. 35 years wide experience \n2. Student focused education \n3. Good infrastructure \n4. Qualified and Experienced staff \n5. Free Leased Line and Broad band    Internet Facility \n6. Open access in library \n7. Excellent Higher Study and Placement Record \n8. Good industry interaction \n9. Regular Industrial Visits and Expert Talks \n10. Monthly progress report scheme for first year \n11. Spacious playground with tennis, volleyball and basketball courts \n"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:neomorph_background_color="@color/bgcolor"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_elevation="6dp"
+                app:neomorph_highlight_color="#ffff"
+                app:neomorph_shadow_color="#B2C0F3"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_view_type="rectangular">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+
+                    <TextView
+                        android:layout_width="297dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="10dp"
+                        android:padding="8dp"
+                        android:text="12. Linked with city by college bus and city buses from all parts of the city \n13.In campus hostel and mess facilities for outstation students \n14. Language Laboratory \n15. Conducive academic atmosphere \n16. State of art Laboratories \n17. Modern teaching learning methodology and tools \n18. Excellent Final Year Results \n19. 24hrs Power Backup (320 KVA Genset) \n20. Excellent gymnasium \n21. Mentor scheme for individual attention \n22. Active Institute Industry Partnership Cell (IIPC)"
                         android:textAlignment="textStart"
                         android:textColor="#7156C7"
                         android:textSize="14sp"

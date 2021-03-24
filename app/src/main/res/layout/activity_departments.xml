@@ -112,7 +112,7 @@
                                 android:layout_width="95dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Intake"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
@@ -158,11 +158,11 @@
                                 android:layout_width="95dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Computer Technology "
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -203,11 +203,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Chemical Engineering"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -249,11 +249,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Electrical Engineering"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
 
                         </LinearLayout>
@@ -297,7 +297,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="-5dp"
                                 android:layout_marginBottom="-5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Electronics and Telecommunication"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
@@ -343,11 +343,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="-5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Information Technology"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
 
                         </LinearLayout>
@@ -391,11 +391,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Civil Engineering"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
 
                         </LinearLayout>
@@ -440,11 +440,11 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/baloo2_semibold"
+                                android:fontFamily="@font/montserrat_semibold"
                                 android:text="Mechanical Engineering"
                                 android:textAlignment="center"
                                 android:textColor="#7156C7"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
 
                         </LinearLayout>
